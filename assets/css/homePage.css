@@ -1,0 +1,1474 @@
+
+/**
+ * Home Page Style Documentation
+ */
+@import url("https://fonts.googleapis.com/css?family=Avenir");
+
+/**
+ * Desktop
+ */
+@media screen and (max-width: 1440px) {
+    .rL-margin {
+        margin-right: 70px !important;
+        margin-left: 70px !important;
+    }
+
+    .flex-card {
+        grid-column-gap: 32px !important;
+    }
+
+    .rL-slider {
+        margin-right: 70px !important;
+        margin-left: 70px !important;
+    }
+
+    .arrowWidth {
+        width: 70px !important;
+    }
+
+    .lastViewed,
+    .newArrivals {
+        padding-right: 170px !important;
+        padding-left: 170px !important;
+    }
+
+    .rL-air-iphone {
+        margin: 0 150px 0 160px !important;
+    }
+
+    .grid-new-arrivals {
+        margin-right: 170px !important;
+        margin-left: 170px !important;
+    }
+
+    .gridWidth {
+        max-width: calc(100% - 100px) !important;
+    }
+
+    .flex-card-review {
+        grid-column-gap: 15px !important;
+    }
+
+    .txt-shipping-small {
+        max-width: 80% !important;
+    }
+
+    .footer-padding {
+        padding-right: 80px !important;
+        padding-left: 150px !important;
+    }
+
+    .red-line1 {
+        width: 22vw !important;
+    }
+
+    .red-line-collections {
+        width: 9vw !important;
+    }
+
+    .red-line-company {
+        width: 8vw !important;
+    }
+
+    .red-line-touch {
+        width: 12vw !important;
+    }
+
+    .red-line-stranger {
+        width: 16vw !important;
+    }
+
+    .icon-width1 {
+        width: 23% !important;
+    }
+
+    .icon-width2 {
+        width: 35% !important;
+    }
+
+    .icon-width3 {
+        width: 42% !important;
+    }
+}
+
+/**
+ * Large Laptop
+ */
+@media screen and (max-width: 1200px) {
+    .rL-margin {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+    }
+
+    .txt20 {
+        font-size: 1.2rem !important;
+    }
+
+    .rL-slider {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+    }
+
+    .flex-card {
+        grid-template-columns: 1fr 1fr !important;
+        grid-column-gap: 80px !important;
+    }
+
+    .arrowWidth {
+        width: 100px !important;
+    }
+
+    .card-bg-slider {
+        margin-bottom: 40px !important;
+    }
+
+    .product-size1 {
+        width: 50% !important;
+    }
+
+    .product-size2 {
+        width: 40% !important;
+    }
+
+    .lastViewed, .newArrivals {
+        padding-right: 130px !important;
+        padding-left: 130px !important;
+    }
+
+    .rL-air-iphone {
+        margin: 0 100px 0 120px !important;
+    }
+
+    .grid-new-arrivals {
+        margin-right: 130px !important;
+        margin-left: 130px !important;
+    }
+
+    .card-review-slider {
+        padding: 15px !important;
+    }
+
+    .txt-left-width {
+        width: 100% !important;
+    }
+
+    .imgWidth {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .imgTxtWidth {
+         width: 100% !important;
+    }
+
+    .useful-sony-img {
+        padding-bottom: 20px !important;
+        max-width: 60% !important;
+        max-height: 60% !important;
+        min-width: 150px !important;
+        min-height: 240px !important;
+    }
+
+    .red-line1 {
+        width: 26vw !important;
+    }
+
+    .red-line-collections {
+        width: 11vw !important;
+    }
+
+    .red-line-company {
+        width: 10vw !important;
+    }
+
+    .red-line-touch {
+        width: 14vw !important;
+    }
+
+    .red-line-stranger {
+        width: 19vw !important;
+    }
+
+    .input-filed {
+        max-width: 40vw !important;
+    }
+
+    .footer-padding {
+        padding-right: 60px !important;
+        padding-left: 60px !important;
+    }
+}
+
+/**
+ * Lap Desktop
+ */
+@media screen and (max-width: 992px) {
+
+    .menubar-icon {
+        display: block !important;
+    }
+
+    .lapDesktop-hidden {
+        display: none !important;
+    }
+
+    .product-size1 {
+        width: 60% !important;
+    }
+
+    .product-size2 {
+        width: 50% !important;
+    }
+
+    .flex-card-shop {
+        grid-column-gap: 15px !important;
+    }
+
+    .card-shop {
+        margin-bottom: 15px !important;
+    }
+
+    .threeImg {
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .txt-gray-font {
+        font-size: 1.1rem !important;
+    }
+
+    .title-left {
+        font-size: 1.6rem !important;
+    }
+
+    .red-line1 {
+        width: 35vw !important;
+    }
+
+    .icon-width1 {
+        width: 100% !important;
+    }
+
+    .icon-width2 {
+        width: 100% !important;
+    }
+
+    .icon-width3 {
+        width: 100% !important;
+    }
+
+    .red-line-collections {
+        width: 14vw !important;
+    }
+
+    .red-line-company {
+        width: 13vw !important;
+    }
+
+    .red-line-touch {
+        width: 18vw !important;
+    }
+
+    .red-line-stranger {
+        width: 23vw !important;
+    }
+
+    .secure-right {
+        padding-right: 20px !important;
+    }
+}
+
+/**
+ * Lap Tablet
+ */
+@media screen and (max-width: 768px) {
+    .flex-card {
+        grid-column-gap: 20px !important;
+    }
+
+    .gridWidth {
+        max-width: calc(100% - 50px) !important;
+    }
+
+    .lastViewed, .newArrivals {
+        padding: 40px 110px !important;
+    }
+
+    .rL-air-iphone {
+        margin: 0 20px !important;
+        min-width: 250px !important;
+    }
+
+    .grid-new-arrivals {
+        margin-right: 100px !important;
+        margin-left: 100px !important;
+    }
+
+    .flex-card-review {
+        grid-template-columns: 1fr !important;
+    }
+
+    .flex-card-tips {
+        grid-column-gap: 20px !important;
+    }
+
+    .imgTxtWidth {
+        padding-left: 0 !important;
+    }
+
+    .input-filed {
+        max-width: 55vw !important;
+    }
+
+    .red-line1 {
+        width: 42vw !important;
+    }
+
+    .collections-width,
+    .company-width,
+    .touch-width,
+    .stranger-width {
+        width: 50% !important;
+    }
+
+    .red-line-collections {
+        width: 18vw !important;
+    }
+
+    .red-line-company {
+        width: 17vw !important;
+    }
+
+    .red-line-touch {
+        width: 22vw !important;
+    }
+
+    .red-line-stranger {
+        width: 32vw !important;
+    }
+
+    .left-padding {
+        padding-left: 10% !important;
+    }
+
+    .txt-font-color4 {
+        font-size: 1.5rem !important;
+    }
+
+    .item-padding {
+        padding-bottom: 10px !important;
+    }
+
+    .collections-bottom {
+        padding-top: 20px !important;
+    }
+
+    .txt-font-color6 {
+        font-size: 1rem !important;
+    }
+
+    .payment-icon {
+        width: 30px !important;
+    }
+}
+
+/**
+ * Phone Tablet
+ */
+@media screen and (max-width: 600px) {
+    .phoneMax {
+        margin: 7px auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .header-txt {
+        height: auto !important;
+    }
+
+    .header-txt > .rL-float {
+        display: block !important;
+    }
+
+    .cases-heart-txt {
+        padding-top: 50px !important;
+        padding-bottom: 20px !important;
+        font-size: 2.2rem !important;
+    }
+
+    .middle-txt {
+        font-size: 1.2rem !important;
+    }
+
+    .flex-card {
+        grid-template-columns: 1fr !important;
+    }
+
+    .arrow-size {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .phoneTablet-hide {
+        display: none !important;
+    }
+
+    .gridWidth {
+        max-width: 100% !important;
+    }
+
+    .lastViewed, .newArrivals {
+        padding: 40px 80px !important;
+    }
+
+    .grid-new-arrivals {
+        margin-right: 80px !important;
+        margin-left: 80px !important;
+    }
+
+    .btn-all {
+        margin-top: 20px !important;
+        max-height: 50px !important;
+    }
+
+    .flex-card-shop {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .flex-card-tips {
+        grid-template-columns: 1fr !important;
+    }
+
+    .input-filed {
+        max-width: 75vw !important;
+        min-width: 280px !important;
+    }
+
+    .red-line1 {
+        width: 55vw !important;
+        min-width: 280px !important;
+    }
+
+    .left-padding {
+        padding-left: 5% !important;
+    }
+
+    .red-line-collections {
+        width: 22vw !important;
+    }
+
+    .red-line-company {
+        width: 20vw !important;
+    }
+
+    .red-line-touch {
+        width: 26vw !important;
+    }
+
+    .red-line-stranger {
+        width: 40vw !important;
+    }
+
+
+    .arrowWidth {
+        width: 70px !important;
+    }
+
+    .paymentLink,
+    .txt-font-color6 {
+        width: 100% !important;
+    }
+
+    .payment-flex {
+        display: unset !important;
+    }
+
+    .w3-bar .w3-bar-item {
+        float: unset !important;
+        display: inline !important;
+    }
+
+    .phone-hidden {
+        display: none !important;
+    }
+
+    .phone-shown {
+        display: block !important;
+        padding: 30px 15px 15px !important;
+    }
+
+    .paymentLink {
+        height: 50px !important;
+    }
+}
+
+/**
+ * Phone
+ */
+@media screen and (max-width: 480px) {
+
+    .logo-size {
+        margin: 0 auto;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+    .rL-margin {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+
+    .phoneTablet-mobile {
+        display: none !important;
+    }
+
+    .dropdown-menu {
+        margin: 2px -130px !important;
+    }
+
+    .rectangle-trans-mobile {
+        float: right !important;
+    }
+
+    .title-top {
+        height: auto !important;
+        font-size: 1.2rem !important;
+    }
+
+    .lastViewed, .newArrivals {
+        padding: 40px 30px !important;
+    }
+
+    .grid-new-arrivals {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+        min-width: 250px !important;
+    }
+
+    .rL-slider {
+        margin-right: 15px !important;
+        margin-left: 15px !important;
+    }
+
+    .btn-all {
+        max-width: 100% !important;
+        border-radius: unset !important;
+
+        color: #ffffff !important;
+        background-color: #ED365C !important;
+    }
+
+    .btn-all:hover {
+        color: #ED365C !important;
+        background-color: #ffffff !important;
+    }
+
+    .txt-gray-font {
+        font-size: 0.9rem !important;
+    }
+
+    .hover-circle-left,
+    .hover-circle-right {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .sonyDateTxt {
+        font-size: 1.3rem !important;
+    }
+
+    .input-filed > input {
+        height: 40px !important;
+    }
+
+    .btn-subscribe {
+        margin: 2px !important;
+    }
+
+    .footer-padding {
+        margin: 0 auto !important;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .txt-font-color4 {
+        font-size: 1.2rem !important;
+    }
+
+    .txt-font-color1 {
+        font-size: 1.3rem !important;
+    }
+
+    .touch-width,
+    .stranger-width,
+    .collections-width,
+    .company-width {
+        margin: 0 auto;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .red-line-collections,
+    .red-line-company,
+    .red-line-touch,
+    .red-line-stranger {
+        margin: 0 auto;
+        width: 100% !important;
+        max-width: 250px !important;
+        text-align: center !important;
+    }
+
+    .top-padding {
+        padding: 30px 0 !important;
+    }
+}
+
+/**
+ * navBar
+ */
+* {
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    color: #4E4E4E;
+    background-color: #ffffff;
+}
+
+/**
+ * common using
+ */
+.margin-center-width {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.justify-middle-contents {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container > div
+{
+    width: 1920px;
+    text-align: center;
+
+}
+
+.mouseCursor {
+    cursor: pointer;
+}
+
+.shown {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/**
+ * main
+ */
+.homeHeader {
+    max-width: 1920px;
+}
+
+.header-txt {
+    display: flex;
+    height: 32px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2E3A52;
+}
+
+.navBar-height {
+    position: relative;
+    height: 82px;
+}
+
+.rL-margin {
+    margin-right: 170px;
+    margin-left: 170px;
+    min-width: 260px;
+}
+
+.rL-float {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menubar-icon {
+    display: none;
+}
+
+.lapDesktop-hidden,
+.phoneTablet-mobile {
+    display: block;
+}
+
+.dropDownIcon-size {
+    margin-left: 5px;
+    width: 15px;
+}
+
+.item-paddings {
+    padding: 10px 20px 10px 40px;
+}
+
+.icon-padding {
+    padding-right: 20px;
+    width: 100%;
+    max-width: 38px;
+}
+
+.dropdown-menu {
+    margin-top: 25px !important;
+    width: 220px !important;
+    box-shadow: 0 0 4px #0006;
+}
+
+/**
+ * dropDown Btn - 1
+ */
+.rectangle-trans {
+    margin: -25px 40px 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: -2px -2px 2px #0006;
+    transform: rotate(45deg);
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.dropDown-item {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.dropDown-item:hover {
+    color: #ED365C !important;
+}
+
+/**
+ * dropDown Btn - 2
+ */
+.dropdown-menu-mobile {
+    width: 160px !important;
+}
+
+.menu-mobile {
+    font-size: 1.2rem !important;
+    margin-bottom: 4px !important;
+}
+
+.rectangle-trans-mobile {
+    margin: -20px 20px 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: -2px -2px 2px #0006;
+    transform: rotate(45deg);
+}
+
+hr {
+    margin: 0 !important;
+}
+
+.txt20 {
+    font-size: 1.5rem;
+}
+
+.cartStoreBg {
+    margin-right: 3px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #f5f6f7;
+}
+
+.bagTop {
+    margin-top: 10px;
+}
+
+.bagBtn {
+    padding: 0 15px;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ED365C;
+}
+
+.bagBtn:hover {
+    /*box-shadow: 0 10px 20px 0 rgba(71, 67, 33, 0.6);*/
+    color: black;
+    background-color: yellow;
+}
+
+.title-top {
+    margin: 36px 0 28px;
+    border-radius: 10px;
+    height: 47px;
+
+    font-size: 1.5rem;
+    color: #ffffff;
+
+    background-color: #ED365C;
+}
+
+.iPhone-width {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.cases-heart-txt {
+    padding-top: 70px;
+    padding-bottom: 36px;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.middle-txt {
+    font-size: 1.5rem;
+}
+
+.txt-red {
+    font-weight: bold;
+    color: #ED365C !important;
+}
+
+.txt-red-top {
+    padding-top: 26px;
+}
+
+/**
+ * slide
+ */
+
+.arrowWidth {
+    width: 100px;
+}
+
+.gridWidth {
+    max-width: calc(100% - 200px);
+}
+
+.hover-circle-left, .hover-circle-right {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.hover-circle-right:hover,
+.hover-circle-left:hover {
+    border-radius: 50%;
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+}
+
+.arrow-size {
+    width: 50px;
+    height: 50px;
+}
+
+.rL-slider {
+    margin: 0 115px;
+    text-align: center;
+
+    min-width: 230px;
+}
+
+.flex-card {
+    display: grid;
+    padding-top: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 72px;
+}
+
+.card-bg-slider {
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear;
+
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+}
+
+.card-bg-slider:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.8);
+}
+
+.img-item {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100px;
+    color: rgba(255,255,255,0.7);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.product-size1 {
+    width: 80%;
+}
+
+.product-size2 {
+    width: 64%;
+}
+
+.txt-description {
+    padding: 10px 20px 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.txt-description:hover {
+    color: #4f7fff;
+}
+
+.txt-star {
+    font-size: 1.2rem;
+}
+
+.icon-size1 {
+    width: 80px;
+}
+
+.icon-size2 {
+    width: 90px;
+    height: 70px;
+}
+
+/**
+ * Air Pod and iPhone
+ */
+
+.lastViewed {
+    padding: 93px 215px 73px;
+}
+
+.rL-air-iphone {
+    margin: 0 150px 0 215px;
+    text-align: center;
+}
+
+.product-size3 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.newArrivals {
+    padding: 56px 215px 0;
+}
+
+/**
+ * Last Arrivals
+ */
+.grid-new-arrivals {
+    margin: 0 215px;
+    text-align: center;
+}
+
+.grid-card-bottom {
+    margin-bottom: 50px;
+}
+
+.btn-all {
+    margin: 50px auto 0;
+    padding: 10px;
+    border: 2px solid #ED365C;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 175px;
+    height: 100%;
+    max-height: 70px;
+
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    color: #ED365C;
+    cursor: pointer;
+}
+
+.btn-all:hover {
+    color: #ffffff;
+    background-color: #ED365C;
+}
+
+/**
+ * Shop the Look
+ */
+
+.grid-shop {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-card-shop {
+    display: grid;
+    padding-top: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 32px;
+}
+
+.card-shop {
+    margin-bottom: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear;
+}
+
+.card-shop:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.8);
+}
+
+/**
+ * Reviews
+ */
+.flex-card-review {
+    display: grid;
+    padding-top: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 32px;
+}
+
+.card-review-slider {
+    padding: 20px 20px 25px 32px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear;
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+}
+
+.card-review-slider:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.8);
+}
+
+.star-response {
+    width: 100%;
+    max-width: 40%;
+
+}
+
+.txt-gray-font {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.title-left {
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.txt-left-width {
+    padding-bottom: 30px;
+    text-align: left;
+    width: 80%;
+}
+
+.threeImg {
+    padding-right: 5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/**
+ * slide check
+ */
+.scrollMargin {
+    margin-top: 15px;
+}
+
+.stickMargin {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.check {
+    margin: 0;
+    border: 1px solid #ED365C;
+    border-radius: 8px;
+    width:75px;
+    height:6px;
+    background: #ED365C;
+}
+
+.uncheck {
+    margin: 0;
+    border: 1px solid #eaecec;
+    border-radius: 8px;
+    width:75px;
+    height:6px;
+    background: #eaecec;
+}
+
+.fast-support {
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+    min-width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear;
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.3);
+}
+
+.fast-support:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.8);
+}
+
+.txt-shipping,
+.txt-shipping-small {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.txt-shipping {
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.txt-shipping-small {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    max-width: 55%;
+}
+
+.txt-width {
+    width: 60%;
+}
+
+/**
+ * Useful Tips
+ */
+.flex-card-tips {
+    display: grid;
+    padding-top: 20px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 46px;
+}
+
+.card-tips-slider {
+    padding: 20px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear;
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+}
+
+.card-tips-slider:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.8);
+}
+
+.imgWidth {
+    width: 40%;
+}
+
+.imgTxtWidth {
+    position: relative;
+    padding-left: 20px;
+    width: 60%;
+    text-align: left;
+}
+
+.useful-sony-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 180px;
+    min-height: 330px;
+    text-align: center;
+}
+
+.sonyTitleTxt {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sonyDescTxt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.sonyMoreTxt {
+    padding-top: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ED365C;
+}
+
+.sonyDateTxt {
+    position: relative;
+    font-size: 1.6rem;
+    color: #CCCCCB;
+}
+
+/**
+ * Footer
+ */
+.footerBg {
+    margin-top: 50px;
+    background-color: #2E3A52;
+}
+
+.footer-padding {
+    padding: 14px 120px 0 220px;
+}
+
+.red-line1 {
+    width: 18vw;
+}
+.txt-font-color1 {
+    border-bottom: 3px solid #ED365C;
+    font-size: 1.45rem;
+}
+
+.txt-font-color2 {
+    padding-left: 30px;
+    font-size: 1.2rem;
+}
+
+.txt-font-color3 {
+    font-size: 0.9rem;
+}
+
+.txt-font-color4 {
+    font-size: 1.65rem;
+}
+
+.txt-font-color5 {
+    font-size: 1.1rem;
+}
+
+.txt-font-color6 {
+    font-size: 1.25rem;
+}
+
+.txt-font-color1,
+.txt-font-color2,
+.txt-font-color4 {
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.txt-font-color5 {
+    color: #aaa9b5;
+    cursor: pointer;
+}
+
+.txt-font-color5:hover {
+    color: #ED365C;
+}
+
+
+.txt-font-color6 {
+    color: #4D555B;
+}
+
+.txt-font-color3 {
+    color: #ffffff;
+}
+
+div .footer-hr {
+    border-top: 2px solid #4D555B;
+}
+.paymentLink {
+    height: 84px;
+}
+
+.w3-bar .w3-bar-item {
+    padding: 8px 4px !important;
+}
+
+.secure-right {
+    padding-right: 50px;
+}
+
+.input-filed {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 25vw;
+    text-align: center;
+}
+
+.input-filed > input {
+    margin: 28px auto 56px;
+    padding-left: 10px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+
+    height: 47px;
+    font-size: 1rem !important;
+    color: #4D555B;
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+}
+
+.w3-input {
+    padding: 0 0 0 25px !important;
+}
+
+.btn-subscribe {
+    margin: 5px;
+    border-radius: 16px;
+    width: 120px;
+    height: 36px;
+    text-align: center;
+
+    color: #ffffff;
+    background-color: #ED365C;
+}
+
+.icon-width1,
+.icon-width2,
+.icon-width3 {
+    width: 33%;
+}
+
+.img-width {
+    margin-top: 10px;
+    width: 70px;
+}
+
+.top-padding {
+    padding: 60px 0 75px;
+}
+
+.collections-width {
+    width: 20%;
+}
+
+.company-width {
+    width: 20%;
+}
+
+.touch-width {
+    width: 30%;
+}
+
+.stranger-width {
+    width: 30%;
+}
+
+.red-line-collections {
+    width: 7vw;
+}
+
+.collections-bottom {
+    padding-top: 35px;
+}
+
+.item-padding {
+    padding-bottom: 20px;
+}
+
+.item-padding-small {
+    padding-bottom: 7px;
+}
+
+.item-top {
+    padding-top: 30px;
+}
+
+.red-line-company {
+    width: 6vw;
+}
+
+.red-line-touch {
+    width: 8vw;
+}
+
+.red-line-stranger {
+    width: 13vw;
+}
+
+.icon-size {
+    height: 17px;
+}
+
+.payment-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-hidden {
+    display: block;
+}
+
+.phone-shown {
+    display: none;
+}
