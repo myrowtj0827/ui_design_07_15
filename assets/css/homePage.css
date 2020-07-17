@@ -8,6 +8,10 @@
  * Desktop
  */
 @media screen and (max-width: 1440px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 88% !important;
+    }
+
     .rL-margin {
         margin-right: 70px !important;
         margin-left: 70px !important;
@@ -110,6 +114,11 @@
  * Large Laptop
  */
 @media screen and (max-width: 1200px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 86% !important;
+        left: 38% !important;
+    }
+
     .rL-margin {
         margin-right: 30px !important;
         margin-left: 30px !important;
@@ -240,6 +249,10 @@
  * Lap Desktop
  */
 @media screen and (max-width: 992px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 85% !important;
+        left: 36% !important;
+    }
 
     .menubar-icon {
         display: block !important;
@@ -321,6 +334,10 @@
  * Lap Tablet
  */
 @media screen and (max-width: 768px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 80% !important;
+        left: 30% !important;
+    }
 
     .icon-size1 {
         margin-top: 15px !important;
@@ -437,6 +454,11 @@
  * Phone Tablet
  */
 @media screen and (max-width: 600px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 80% !important;
+        left: 35% !important;
+    }
+
     .phoneMax {
         margin: 7px auto !important;
         width: 100% !important;
@@ -584,6 +606,10 @@
  * Phone
  */
 @media screen and (max-width: 480px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        top: calc(100% - 30px) !important;
+        left: 38% !important;
+    }
 
     .logo-size {
         margin: 0 auto;
@@ -1660,4 +1686,10 @@ div .owl-prev:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    position: absolute;
+    top: 90%;
+    left: 40%;
 }

@@ -18,7 +18,7 @@ $(document).ready(function() {
         "                </div></span>"],
         dots:true,
         autoplay:true,
-        autoplayTimeout:1500,
+        autoplayTimeout:2500,
         // autoWidth:true,
         // paginationSpeed: 300,
         // rewindSpeed: 400,
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     });
 
-    owl.trigger('owl.play',1500);
+    owl.trigger('owl.play',2500);
 
     // Custom Navigation Events
     $(".tipsNext").click(function(){
@@ -89,7 +89,7 @@ $(document).ready(function() {
         "                </div></span>"],
         autoplay:true,
         dots:true,
-        autoplayTimeout:1500,
+        autoplayTimeout:2500,
 
         responsive:{
             0:{
@@ -107,7 +107,7 @@ $(document).ready(function() {
         }
     });
 
-    owl.trigger('owl.play',1500);
+    owl.trigger('owl.play',2500);
 
     $(".tipsNext").click(function(){
         owl.trigger('owl.next');
@@ -149,9 +149,9 @@ $(document).ready(function() {
         "                    <div class=\"w3-right hover-circle-right justify-middle-contents tipsNext\">\n" +
         "                        <img class=\"arrow-size Atlanta\" src=\"assets/images/home/arrow-right-black.png\" alt=\"\" />\n" +
         "                </div></span>"],
-        autoplay:true,
-        dots:true,
-        autoplayTimeout:1500,
+         autoplay:true,
+        dots:false,
+        autoplayTimeout:2500,
 
         responsive:{
             0:{
@@ -169,7 +169,7 @@ $(document).ready(function() {
         }
     });
 
-    owl.trigger('owl.play',1500);
+    owl.trigger('owl.play',2500);
 
     $(".tipsNext").click(function(){
         owl.trigger('owl.next');
@@ -190,4 +190,24 @@ $(document).ready(function() {
     $('.hover-circle-right img').mouseleave(function() {
         $(this).attr('src', 'assets/images/home/arrow-right-black.png')
     });
+});
+
+
+
+/**
+ * Slide iPhone
+ */
+$(document).ready(function() {
+    let owl = $("#owlSliderIPhone");
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+
+        autoplay:true,
+        dots:true,
+        autoplayTimeout:2500
+    });
+
+    owl.trigger('owl.play',2500);
 });
