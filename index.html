@@ -4,17 +4,22 @@
     <title>HomePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="/assets/js/zepto-1.1.6.min.js"></script>
+    <script src="./assets/js/bootstrap3.4.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap3.4.1.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap4.0.0.min.css">
     <link rel="stylesheet" href="./assets/css/w3.css">
     <link rel="stylesheet" href="./assets/css/homePage.css">
 </head>
@@ -106,7 +111,7 @@
 
         <div class="rL-margin">
             <div class="w3-center cases-heart-txt">
-                Cases Form All The He<a class="txt-red">Art</a><img src="assets/images/home/heartLong.png" alt="" />
+                Cases Form All The He<a class="txt-red"> Art</a><img class="icon-art-left" src="assets/images/home/heartLong.png" alt="" />
             </div>
 
             <div class="w3-center middle-txt">
@@ -118,33 +123,52 @@
             </div>
 
             <div class="w3-center middle-txt txt-red txt-red-top mouseCursor">More ...</div>
-
-            <div class="w3-center cases-heart-txt">Last Viewed</div>
         </div>
     </section>
 
 <!--  Last Viewed  -->
     <section>
+        <div class="w3-center cases-heart-txt">Last Viewed</div>
+
         <div class="rL-slider">
-            <div class="w3-row justify-middle-contents">
-                <div class="w3-col arrowWidth">
-                    <div class="hover-circle-left justify-middle-contents">
-                        <img class="arrow-size" src="assets/images/home/arrow-left-black.png" alt="" />
-                    </div>
-                </div>
+            <div class="justify-middle-contents">
+                <div class="gridWidth w3-center">
+                    <div id="owlSliderLastViewed" class="owl-carousel owl-theme">
 
-                <div class="w3-col gridWidth w3-center">
-                    <div class="flex-card">
                         <div class="card-bg-slider">
-                            <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView4.png" alt="" />
+                            <div class="rL-float justify-middle-contents">
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
                             <div class="w3-row">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
+                            <div class="w3-row rL-float star-width">
+                                <span id="starReview1" class="star-column"></span> <a class="txt-star">25 reviews</a>
+                            </div>
+                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
+                        </div>
+
+                        <div class="card-bg-slider">
+                            <div class="rL-float">
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
+                            </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView6.png" alt="" />
+                                <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
+                            </div>
+                            <div class="w3-row rL-float star-width">
+                                <span id="starReview2" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -152,54 +176,83 @@
 
                         <div class="card-bg-slider">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView3.png" alt="" />
-                            </div>
-                            <div class="w3-row">
-                                <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
-                            </div>
-                            <div class="w3-row">
-                                <img src="assets/images/home/lastView5.png" alt="" /> <a class="txt-star">25 reviews</a>
-                            </div>
-
-                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
-                        </div>
-
-                        <div class="card-bg-slider phoneTablet-hide">
-                            <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView4.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
                             <div class="w3-row">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row">
-                                <img src="assets/images/home/lastView6.png" alt="" />
+                            <div class="w3-row rL-float star-width">
+                                <span id="starReview3" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
                         </div>
 
-                        <div class="card-bg-slider phoneTablet-hide">
+                        <div class="card-bg-slider">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView3.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
                             <div class="w3-row">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row">
-                                <img src="assets/images/home/lastView5.png" alt="" /> <a class="txt-star">25 reviews</a>
+                            <div class="w3-row rL-float star-width">
+                                <span id="starReview4" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="w3-col arrowWidth">
-                    <div class="w3-right hover-circle-right justify-middle-contents">
-                        <img class="arrow-size" src="assets/images/home/arrow-right-black.png" alt="" />
+                        <div class="card-bg-slider">
+                            <div class="rL-float">
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
+                            </div>
+                            <div class="w3-row rL-float star-width">
+                                <span id="starReview20" class="star-column"></span> <a class="txt-star">25 reviews</a>
+                            </div>
+
+                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
+                        </div>
+
+                        <div class="card-bg-slider">
+                            <div class="rL-float">
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
+                            </div>
+                            <div class="w3-row rL-float star-width">
+                                <span id="starReview19" class="star-column"></span> <a class="txt-star">25 reviews</a>
+                            </div>
+
+                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,15 +291,20 @@
                     <div class="flex-card">
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView4.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView6.png" alt="" />
+                                <span id="starReview5"></span>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -254,15 +312,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView3.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView5.png" alt="" /> <a class="txt-star">25 reviews</a>
+                                <span id="starReview6"></span><a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -270,15 +333,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView4.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView6.png" alt="" />
+                                <span id="starReview7"></span>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -286,15 +354,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView3.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView5.png" alt="" /> <a class="txt-star">25 reviews</a>
+                                <span id="starReview8"></span><a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -302,15 +375,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView4.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView6.png" alt="" />
+                                <span id="starReview9"></span>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -318,15 +396,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView3.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView5.png" alt="" /> <a class="txt-star">25 reviews</a>
+                                <span id="starReview10"></span><a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -334,15 +417,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView4.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView6.png" alt="" />
+                                <span id="starReview11"></span>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -350,15 +438,20 @@
 
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
-                                <img class="icon-size1" src="assets/images/home/lastView1.png" alt="" />
-                                <img class="icon-size2" src="assets/images/home/lastView3.png" alt="" />
+                                <div class="icon-size1">
+                                    <div>45%</div>
+                                    <div>OFF</div>
+                                </div>
+                                <div class="icon-size2 justify-middle-contents">
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                </div>
                             </div>
 
                             <div class="w3-row">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
                             <div class="w3-row">
-                                <img src="assets/images/home/lastView5.png" alt="" /> <a class="txt-star">25 reviews</a>
+                                <span id="starReview12"></span><a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -427,18 +520,13 @@
         <div class="w3-center cases-heart-txt">Reviews</div>
 
         <div class="rL-slider">
-            <div class="w3-row justify-middle-contents">
-                <div class="w3-col arrowWidth">
-                    <div class="hover-circle-left justify-middle-contents">
-                        <img class="arrow-size Alabama" src="assets/images/home/arrow-left-black.png" alt="" />
-                    </div>
-                </div>
+            <div class="justify-middle-contents">
+                <div class="gridWidth w3-center">
+                    <div id="owlSliderReviews" class="owl-carousel owl-theme">
 
-                <div class="w3-col gridWidth w3-center">
-                    <div class="flex-card-review">
                         <div class="card-review-slider">
                             <div class="rL-float justify-middle-contents">
-                                <img class="star-response" src="assets/images/home/lastView5.png" alt="" />
+                                <span id="starReview13" class="star-column"></span>
                                 <div class="txt-gray-font">05/18/2020</div>
                             </div>
 
@@ -449,13 +537,13 @@
                             </div>
 
                             <div class="w3-row">
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -463,7 +551,7 @@
 
                         <div class="card-review-slider">
                             <div class="rL-float justify-middle-contents">
-                                <img class="star-response" src="assets/images/home/lastView5.png" alt="" />
+                                <span id="starReview14" class="star-column"></span>
                                 <div class="txt-gray-font">05/18/2020</div>
                             </div>
 
@@ -474,13 +562,13 @@
                             </div>
 
                             <div class="w3-row">
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -488,7 +576,7 @@
 
                         <div class="card-review-slider">
                             <div class="rL-float justify-middle-contents">
-                                <img class="star-response" src="assets/images/home/lastView5.png" alt="" />
+                                <span id="starReview15" class="star-column"></span>
                                 <div class="txt-gray-font">05/18/2020</div>
                             </div>
 
@@ -499,40 +587,93 @@
                             </div>
 
                             <div class="w3-row">
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4">
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-review-slider">
+                            <div class="rL-float justify-middle-contents">
+                                <span id="starReview16" class="star-column"></span>
+                                <div class="txt-gray-font">05/18/2020</div>
+                            </div>
+
+                            <div class="title-left txt-left-width">Kamille Effertz</div>
+
+                            <div class="txt-gray-font txt-left-width">
+                                It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
+                            </div>
+
+                            <div class="w3-row">
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
+                                </div>
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
+                                </div>
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-review-slider">
+                            <div class="rL-float justify-middle-contents">
+                                <span id="starReview17" class="star-column"></span>
+                                <div class="txt-gray-font">05/18/2020</div>
+                            </div>
+
+                            <div class="title-left txt-left-width">Kamille Effertz</div>
+
+                            <div class="txt-gray-font txt-left-width">
+                                It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
+                            </div>
+
+                            <div class="w3-row">
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
+                                </div>
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
+                                </div>
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-review-slider">
+                            <div class="rL-float justify-middle-contents">
+                                <span id="starReview18" class="star-column"></span>
+                                <div class="txt-gray-font">05/18/2020</div>
+                            </div>
+
+                            <div class="title-left txt-left-width">Kamille Effertz</div>
+
+                            <div class="txt-gray-font txt-left-width">
+                                It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
+                            </div>
+
+                            <div class="w3-row">
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
+                                </div>
+                                <div class="w3-col l4 m4 s4">
+                                    <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
+                                </div>
+                                <div class="w3-col l4 m4 s4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="w3-col arrowWidth">
-                    <div class="w3-right hover-circle-right justify-middle-contents">
-                        <img class="arrow-size Atlanta" src="assets/images/home/arrow-right-black.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-bar w3-center scrollMargin">
-            <div class="justify-middle-contents stickMargin">
-                <div class="w3-bar-item">
-                    <hr class="Alabama2 mouseCursor check"/>
-                </div>
-                <div class="w3-bar-item">
-                    <hr class="Alabama1 mouseCursor uncheck"/>
-                    <!--                <hr class="Alabama2 check hide"/>-->
-                </div>
-                <div class="w3-bar-item">
-                    <hr class="Atlanta1 mouseCursor uncheck"/>
-                    <!--                <hr class="Atlanta2 check hide"/>-->
                 </div>
             </div>
         </div>
@@ -572,16 +713,11 @@
     <!--  Useful Tips  -->
     <section>
         <div class="w3-center cases-heart-txt">Useful Tips</div>
-        <div class="rL-slider">
-            <div class="w3-row justify-middle-contents">
-                <div class="w3-col arrowWidth">
-                    <div class="hover-circle-left justify-middle-contents">
-                        <img class="arrow-size Alabama" src="assets/images/home/arrow-left-black.png" alt="" />
-                    </div>
-                </div>
 
-                <div class="w3-col gridWidth w3-center">
-                    <div class="flex-card-tips">
+        <div class="rL-slider">
+            <div class="justify-middle-contents">
+                <div class="gridWidth w3-center">
+                    <div id="owlSliderTips" class="owl-carousel owl-theme">
                         <div class="card-tips-slider">
                             <div class="rL-float">
                                 <div class="w3-row">
@@ -633,29 +769,85 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="w3-col arrowWidth">
-                    <div class="w3-right hover-circle-right justify-middle-contents">
-                        <img class="arrow-size Atlanta" src="assets/images/home/arrow-right-black.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div class="card-tips-slider">
+                            <div class="rL-float">
+                                <div class="w3-row">
+                                    <div class="w3-col imgWidth">
+                                        <img class="useful-sony-img" src="assets/images/home/usefulTips.png" alt="" />
+                                    </div>
+                                    <div class="w3-col imgTxtWidth">
+                                        <div class="sonyTitleTxt">
+                                            Can't decide between Apple AirPods and Sony WF-1000XM3?
+                                        </div>
+                                        <div class="sonyDescTxt">
+                                            Here's all you need to know before making a decision
+                                        </div>
 
-        <div class="w3-bar  scrollMargin">
-            <div class="stickMargin justify-middle-contents">
-                <div class="w3-bar-item">
-                    <hr class="Alabama2 mouseCursor check"/>
-                </div>
-                <div class="w3-bar-item">
-                    <hr class="Alabama1 mouseCursor uncheck"/>
-                    <!--                <hr class="Alabama2 check hide"/>-->
-                </div>
-                <div class="w3-bar-item">
-                    <hr class="Atlanta1 mouseCursor uncheck"/>
-                    <!--                <hr class="Atlanta2 check hide"/>-->
+                                        <div class="sonyDescTxt">
+                                            If you are not faithful to one brand, choosing the...
+                                        </div>
+                                        <div class="sonyMoreTxt">
+                                            More ...
+                                        </div>
+                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tips-slider">
+                            <div class="rL-float">
+                                <div class="w3-row">
+                                    <div class="w3-col imgWidth">
+                                        <img class="useful-sony-img" src="assets/images/home/sony.png" alt="" />
+                                    </div>
+                                    <div class="w3-col imgTxtWidth">
+                                        <div class="sonyTitleTxt">
+                                            Can't decide between Apple AirPods and Sony WF-1000XM3?
+                                        </div>
+                                        <div class="sonyDescTxt">
+                                            Here's all you need to know before making a decision
+                                        </div>
+
+                                        <div class="sonyDescTxt">
+                                            If you are not faithful to one brand, choosing the...
+                                        </div>
+                                        <div class="sonyMoreTxt">
+                                            More ...
+                                        </div>
+                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-tips-slider">
+                            <div class="rL-float">
+                                <div class="w3-row">
+                                    <div class="w3-col imgWidth">
+                                        <img class="useful-sony-img" src="assets/images/home/usefulTips.png" alt="" />
+                                    </div>
+                                    <div class="w3-col imgTxtWidth">
+                                        <div class="sonyTitleTxt">
+                                            Can't decide between Apple AirPods and Sony WF-1000XM3?
+                                        </div>
+                                        <div class="sonyDescTxt">
+                                            Here's all you need to know before making a decision
+                                        </div>
+
+                                        <div class="sonyDescTxt">
+                                            If you are not faithful to one brand, choosing the...
+                                        </div>
+                                        <div class="sonyMoreTxt">
+                                            More ...
+                                        </div>
+                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -807,55 +999,51 @@
                 </div>
             </div>
         </div>
-
     </section>
 </div>
 
-<script src="/assets/js/zepto-1.1.6.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-        $('.collections img').mouseenter(function () {
-                $(this).attr('src', 'assets/images/home/downBtnRed.png')
-        });
+    /**
+     * Making the star marking
+     * @type {number[]}
+     * starArray is the review count array per each products
+     */
+    let starArray = [4, 2, 5, 3, 5, 0, 1, 2, 3, 5, 0, 3, 2, 4, 5, 0, 2, 5, 4, 3];
+    let id_star;
+    for(let k = 1; k <= starArray.length; k ++) {
+        id_star = 'starReview' + k.toString();
+        if ($('#' + id_star).length !== 0) {
+            document.getElementById(id_star).innerHTML = '';
 
-        $('.collections img').mouseleave(function () {
-            $(this).attr('src', 'assets/images/home/downBtnBlack.png')
-        });
+            for (let yStar = 1; yStar <= starArray[k - 1]; yStar ++) {
+                document.getElementById(id_star).innerHTML += '<span><img src="assets/images/home/lastView-yellow.png" alt="" /></span>';
+            }
 
-        $('.collections span').mouseenter(function () {
-            $('.collections img').attr('src', 'assets/images/home/downBtnRed.png')
-        });
+            for (let gStar = 5; gStar > starArray[k - 1]; gStar --) {
+                document.getElementById(id_star).innerHTML += '<span><img src="assets/images/home/lastView-gray.png" alt="" /></span>';
+            }
+        }
+    }
 
-        $('.collections span').mouseleave(function () {
-            $('.collections img').attr('src', 'assets/images/home/downBtnBlack.png')
-        });
+    /**
+     * Arrow replacing
+     */
+    $('.collections img').mouseenter(function () {
+            $(this).attr('src', 'assets/images/home/downBtnRed.png')
+    });
 
-        $('.hover-circle-left img').mouseenter(function() {
-            $(this).attr('src', 'assets/images/home/arrow-left-red.png')
-        });
+    $('.collections img').mouseleave(function () {
+        $(this).attr('src', 'assets/images/home/downBtnBlack.png')
+    });
 
-        $('.hover-circle-left img').mouseleave(function() {
-            $(this).attr('src', 'assets/images/home/arrow-left-black.png')
-        });
+    $('.collections span').mouseenter(function () {
+        $('.collections img').attr('src', 'assets/images/home/downBtnRed.png')
+    });
 
-        $('.hover-circle-right img').mouseenter(function() {
-            $(this).attr('src', 'assets/images/home/arrow-right-red.png')
-        });
+    $('.collections span').mouseleave(function () {
+        $('.collections img').attr('src', 'assets/images/home/downBtnBlack.png')
+    });
 
-        $('.hover-circle-right img').mouseleave(function() {
-            $(this).attr('src', 'assets/images/home/arrow-right-black.png')
-        });
-
-        // $("img.Alabama").click(function () {
-        //     $("hr.Alabama2").removeClass('hide');
-        //     $("hr.Alabama1").addClass('hide');
-        // });
-        //
-        // $("img.Atlanta").click(function () {
-        //     $("hr.Atlanta2").removeClass('hide');
-        //     $("hr.Atlanta1").addClass('hide');
-        // });
 </script>
 </body>
 </html>
