@@ -21,6 +21,11 @@
         grid-column-gap: 32px !important;
     }
 
+    .flex-card-star {
+        padding-top: 10px !important;
+        grid-column-gap: 0 !important;
+    }
+
     .rL-slider {
         margin-right: 70px !important;
         margin-left: 70px !important;
@@ -136,6 +141,10 @@
     .flex-card {
         grid-template-columns: 1fr 1fr !important;
         grid-column-gap: 80px !important;
+    }
+
+    .flex-card-star {
+        grid-template-columns: 1fr 1fr !important;
     }
 
     .arrowWidth {
@@ -328,6 +337,10 @@
         padding-right: 20px !important;
     }
 
+    .navbar-nav {
+        flex-direction: row;
+    }
+
 }
 
 /**
@@ -359,6 +372,8 @@
     .flex-card {
         grid-column-gap: 20px !important;
     }
+
+
 
     .lastViewed, .newArrivals {
         padding: 40px 110px !important;
@@ -448,12 +463,33 @@
     .imgTxtWidth {
         padding: 10px !important;
     }
+
+    .secure-right {
+        padding-top: 0 !important;
+    }
 }
 
 /**
  * Phone Tablet
  */
 @media screen and (max-width: 600px) {
+    /**
+     * Common
+     */
+    .resCol.m1 {width:8.33333%}
+    .resCol.m2{width:16.66666%}
+    .resCol.m3,.w3-quarter{width:24.99999%}
+    .resCol.m4,.w3-third{width:33.33333%}
+    .resCol.m5{width:41.66666%}
+    .resCol.m6,.w3-half{width:49.99999%}
+    .resCol.m7{width:58.33333%}
+    .resCol.m8,.resTwothird{width:66.66666%}
+    .resCol.m9,.resThreequarter{width:74.99999%}
+    .resCol.m10{width:83.33333%}
+    .resCol.m11{width:91.66666%}
+    .resCol.m12{width:99.99999%}
+
+
     .owl-theme .owl-nav.disabled+.owl-dots {
         top: 80% !important;
         left: 35% !important;
@@ -484,6 +520,11 @@
     }
 
     .flex-card {
+        grid-template-columns: 1fr !important;
+    }
+
+    .flex-card-star {
+        padding-top: 0 !important;
         grid-template-columns: 1fr !important;
     }
 
@@ -573,7 +614,9 @@
 
     .phone-shown {
         display: block !important;
-        padding: 30px 15px 15px !important;
+        padding: 20px 15px 15px !important;
+
+        text-align: center;
     }
 
     .paymentLink {
@@ -749,7 +792,7 @@
     }
 
     .display-arrow-left {
-        left: -35px!important;
+        left: -35px !important;
     }
 }
 
@@ -774,6 +817,10 @@ body {
 /**
  * common using
  */
+.alignC {
+    text-align: center;
+}
+
 .margin-center-width {
     margin: 0 auto;
     width: 100%;
@@ -813,6 +860,14 @@ body {
 
 .hidden {
     display: none;
+}
+
+.alignL {
+    float: left !important
+}
+
+.alignR {
+    float: right !important
 }
 
 /**
@@ -881,6 +936,11 @@ body {
 /**
  * dropDown Btn - 1
  */
+.header-btn:hover {
+    text-decoration: none;
+    color: #ED365C !important;
+}
+
 .rectangle-trans {
     margin: -25px 40px 0;
     width: 40px;
@@ -945,6 +1005,10 @@ hr {
     font-size: 1.5rem;
 }
 
+.txt20:hover {
+    color: #ED365C;
+}
+
 .cartStoreBg {
     margin-right: 3px;
     border-radius: 50%;
@@ -958,6 +1022,10 @@ hr {
 }
 
 .bagBtn {
+    position:absolute;
+    right:0;
+    bottom:0;
+
     padding: 0 15px;
     border-radius: 8px;
 
@@ -1057,6 +1125,15 @@ hr {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     grid-column-gap: 72px;
+}
+
+.flex-card-star {
+    display: grid;
+    padding-top: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 10px;
 }
 
 .card-bg-slider {
@@ -1377,14 +1454,25 @@ hr {
 }
 
 .imgWidth {
-    width: 40%;
+    width: 40% !important;
 }
 
 .imgTxtWidth {
     position: relative;
     padding-left: 20px;
-    width: 60%;
+    width: 60% !important;
     text-align: left;
+}
+
+@media screen and (max-width: 1440px) {
+    .imgTxtWidth,
+    .imgWidth {
+        width: 100% !important;
+    }
+
+    .useful-sony-img {
+        max-width: 40% !important;
+    }
 }
 
 .useful-sony-img {
@@ -1423,6 +1511,31 @@ hr {
     color: #CCCCCB;
 }
 
+.display-BL {
+    left:0;
+    bottom:0
+}
+
+.display-BR {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.resRest{overflow:hidden}
+.air-input {padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.resRow:after,.resRow:before {content:"";display:table;clear:both;}
+.resCol,.resHalf,.resThird,.resTwothird,.resThreequarter,.resQuarter{float:left;width:100%}
+.resCol.s1{width:8.33333%}.resCol.s2{width:16.66666%}.resCol.s3{width:24.99999%}.resCol.s4{width:33.33333%}
+.resCol.s5{width:41.66666%}.resCol.s6{width:49.99999%}.resCol.s7{width:58.33333%}.resCol.s8{width:66.66666%}
+.resCol.s9{width:74.99999%}.resCol.s10{width:83.33333%}.resCol.s11{width:91.66666%}.resCol.s12{width:99.99999%}
+
+
+
+
+
+
+
 /**
  * Footer
  */
@@ -1433,6 +1546,7 @@ hr {
 
 .footer-padding {
     padding: 14px 120px 0 220px;
+    min-width: 310px;
 }
 
 .red-line1 {
@@ -1502,6 +1616,7 @@ div .footer-hr {
 }
 
 .secure-right {
+    margin-top: 10px;
     padding-right: 50px;
 }
 
@@ -1556,6 +1671,10 @@ div .footer-hr {
 .img-width {
     margin-top: 10px;
     width: 70px;
+}
+
+.img-rest {
+    width: calc(100% - 70px);
 }
 
 .top-padding {
@@ -1692,4 +1811,392 @@ div .owl-prev:hover {
     position: absolute;
     top: 90%;
     left: 40%;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Collection Page
+ */
+
+
+
+
+
+/**
+ *
+ *Collection page
+ */
+
+/**
+ * airPods documentation
+ */
+
+@media screen and ( max-width: 1440px ){
+
+}
+
+@media screen and ( max-width: 1200px ){
+    .air-txt-position {
+        top: 20% !important;
+        padding-left: 30px !important;
+    }
+
+
+    .flex-airCard-star {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .productList-size1 {
+        width: 70% !important;
+    }
+
+    .productList-size2 {
+        width: 56% !important;
+    }
+
+    .airProducts-grid {
+        max-width: 88% !important;
+    }
+}
+
+@media screen and ( max-width: 992px ) {
+    /**
+     * Common
+     */
+    .resCol.l1{width:8.33333%}
+    .resCol.l2{width:16.66666%}
+    .resCol.l3{width:24.99999%}
+    .resCol.l4{width:33.33333%}
+    .resCol.l5{width:41.66666%}
+    .resCol.l6{width:49.99999%}
+    .resCol.l7{width:58.33333%}
+    .resCol.l8{width:66.66666%}
+    .resCol.l9{width:74.99999%}
+    .resCol.l10{width:83.33333%}
+    .resCol.l11{width:91.66666%}
+    .resCol.l12{width:99.99999%}
+
+    .air-txt-position {
+        top: calc(20% - 20px) !important;
+        padding-left: 15px !important;
+        width: 350px !important;
+    }
+
+    .large-title {
+        padding-bottom: 5px !important;
+        font-size: 3rem !important;
+    }
+
+    .imyCase-bg {
+        background-size: 200px !important;
+        background-position: top center !important;
+    }
+
+    .title-will-txt {
+        padding-top: 200px !important;
+        width: 100% !important;
+        font-size: 1rem !important;
+
+    }
+
+    .imy-padding {
+        padding-right: 30px !important;
+    }
+
+    .flex-airCard-star {
+        grid-column-gap: 0 !important;
+    }
+
+    .airProducts-grid {
+        max-width: 95% !important;
+    }
+
+}
+
+@media screen and ( max-width: 768px ){
+    .air-txt-position {
+        top: 20px !important;
+        margin: 0 auto;
+        padding-left: 0 !important;
+        position: relative !important;
+        padding-top: 30px !important;
+
+        width: 100% !important;
+        max-width: 80% !important;
+    }
+
+    .title-top {
+        padding: 5px 15px !important;
+        height: auto !important;
+    }
+
+    .justify-air-txt {
+        text-align: center !important;
+    }
+
+    .air-card-bg-slider {
+        margin: 10px 10px 10px !important;
+    }
+}
+
+@media screen and ( max-width: 600px ){
+    .small-bold-txt {
+        padding-bottom: 20px !important;
+    }
+
+    .flex-airCard-star {
+        grid-template-columns: 1fr 1fr !important;
+        grid-column-gap: 5px !important;
+    }
+
+    .productList-size1 {
+        width: 60% !important;
+    }
+
+    .productList-size2 {
+        width: 48% !important;
+    }
+
+    .airProducts-grid {
+        max-width: 90% !important;
+    }
+
+    .air-card-bg-slider {
+        margin: 10px 10px 15px !important;
+    }
+
+}
+
+@media screen and ( max-width: 480px ){
+    .air-txt-position {
+        max-width: 90% !important;
+    }
+
+    .imy-padding {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .flex-airCard-star {
+        grid-template-columns: 1fr !important;
+        grid-column-gap: 0 !important;
+    }
+
+    .productList-size1 {
+        width: 60% !important;
+    }
+
+    .productList-size2 {
+        width: 48% !important;
+    }
+
+    .airProducts-grid {
+        max-width: 90% !important;
+    }
+
+    .air-card-bg-slider {
+        margin: 10px 10px 15px !important;
+    }
+}
+
+.air-cartStoreBg {
+    width: 50px;
+    height: 50px;
+}
+
+.bg-position {
+    position: relative;
+}
+
+.airPods-bg {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.air-txt-position {
+    position: absolute;
+    top: 30%;
+    padding-left: 60px;
+    width: 450px;
+}
+
+.justify-air-txt {
+    text-align: left;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-txt,
+.small-bold-txt,
+.small-red-txt {
+    font-size: 1rem;
+}
+
+.large-title {
+    padding-bottom: 20px;
+    font-size: 3.4rem;
+}
+
+.large-title,
+.small-bold-txt,
+.small-red-txt,
+.small-txt:hover {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.small-txt {
+    color: gray;
+}
+
+.small-txt:hover {
+    color: blue;
+}
+
+.small-red-txt {
+    padding-left: 20px;
+    color: #ED365C !important;
+}
+
+.airCase-bg {
+    padding: 20px 20px;
+    background-color: #f2f2f2;
+}
+
+
+.paddingTB {
+    margin: 20px auto;
+    padding: 20px 20px;
+    border-radius: 15px;
+
+    width: 100%;
+    max-width: 82%;
+    min-width: 200px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all .25s linear;
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.3);
+}
+
+.paddingTB:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.8);
+}
+
+.imy-padding {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 20px 60px 20px 30px;
+}
+
+.imyCase-bg {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: right 5% center;
+    background-image: url("../images/collections/imy-case.png");
+}
+
+.will-padding {
+    padding-bottom: 30px;
+}
+
+.title-will-txt {
+    align-items: center;
+
+    width: 58%;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.will-txt {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.cardFooterBg {
+    background-color: #2E3A52;
+}
+
+.flex-airCard-star {
+    display: grid;
+    padding-top: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 10px;
+
+    min-width: 290px;
+}
+
+.productList-size1 {
+    width: 80%;
+}
+
+.productList-size2 {
+    width: 64%;
+}
+
+.airProducts-grid {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 84%;
+    text-align: center;
+}
+
+.air-card-bg-slider {
+    margin: 20px 20px 32px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s linear;
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+}
+
+.air-card-bg-slider:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.7);
+}
+
+.air-cardB {
+    margin-bottom: 30px;
+}
+
+/**
+ * Select Option
+ */
+.productList-option {
+    padding-left: 24px;
+    border: none;
+    border-left: solid 1px gray;
+    width: 20vw;
+    height: 50px;
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+.off245 {
+    color: #000000;
 }

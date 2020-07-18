@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -22,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap3.4.1.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap4.0.0.min.css">
     <link rel="stylesheet" href="./assets/css/w3.css">
-    <link rel="stylesheet" href="./assets/css/homePage.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body class="marginStyle">
 
@@ -40,7 +39,11 @@
 
         <div class="margin-center-width">
             <div class="rL-float rL-margin navBar-height justify-middle-contents">
-                <div class="mouseCursor"><img class="logo-size" src="assets/images/home/logo.png" alt="" /></div>
+                <div class="mouseCursor">
+                    <a href="index.html">
+                        <img class="logo-size" src="assets/images/home/logo.png" alt="" />
+                    </a>
+                </div>
 
 <!--  mobile drop down menu  -->
                 <div class="menubar-icon mouseCursor">
@@ -51,21 +54,25 @@
 
                         <ul class="dropdown-menu dropdown-menu-mobile">
                             <li><div class="rectangle-trans-mobile"></div></li>
-                            <li><a class="dropDown-item menu-mobile" href="#">AIR PODS CASES</a></li>
-                            <li><a class="dropDown-item menu-mobile" href="#">IPHONE CASES</a></li>
-                            <li><a class="dropDown-item menu-mobile" href="#">
+                            <li><a class="dropDown-item menu-mobile header-btn" href="airPods.html">AIR PODS CASES</a></li>
+                            <li><a class="dropDown-item menu-mobile header-btn" href="index.html">IPHONE CASES</a></li>
+                            <li><a class="dropDown-item menu-mobile header-btn" href="#">
                                 <span>COLLECTIONS</span>
                             </a></li>
 
-                            <li><a class="dropDown-item menu-mobile" href="#">NEW ARRIVAL</a></li>
-                            <li><a class="dropDown-item menu-mobile" href="#">SALE</a></li>
+                            <li><a class="dropDown-item menu-mobile header-btn" href="#">NEW ARRIVAL</a></li>
+                            <li><a class="dropDown-item menu-mobile header-btn" href="#">SALE</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="w3-hover-text-red txt20 mouseCursor lapDesktop-hidden">AIR PODS CASES</div>
-                <div class="w3-hover-text-red txt20 mouseCursor lapDesktop-hidden">IPHONE CASES</div>
-                <div class="w3-hover-text-red txt20 mouseCursor collections lapDesktop-hidden">
+                <div class="txt20 mouseCursor lapDesktop-hidden">
+                    <a class="header-btn" href="airPods.html">AIR PODS CASES</a>
+                </div>
+                <div class="txt20 mouseCursor lapDesktop-hidden">
+                    <a class="header-btn" href="index.html">IPHONE CASES</a>
+                </div>
+                <div class="txt20 mouseCursor collections lapDesktop-hidden">
                     <div class="dropdown">
                         <div class="dropdown-toggle"  data-toggle="dropdown">
                             <span>COLLECTIONS</span>
@@ -74,79 +81,76 @@
 
                         <ul class="dropdown-menu">
                             <li><div class="rectangle-trans"></div></li>
-                            <li><a class="dropDown-item" href="#">iPhone Cases</a></li>
-                            <li><a class="dropDown-item" href="#">Air Pods Cases</a></li>
-                            <li><a class="dropDown-item" href="#">New Arrival</a></li>
-                            <li><a class="dropDown-item" href="#">Latest</a></li>
-                            <li><a class="dropDown-item" href="#">Shop The Look</a></li>
-                            <li><a class="dropDown-item" href="#">Useful Tips</a></li>
-                            <li><a class="dropDown-item" href="#">Sale</a></li>
+                            <li><a class="dropDown-item header-btn" href="index.html">iPhone Cases</a></li>
+                            <li><a class="dropDown-item header-btn" href="airPods.html">Air Pods Cases</a></li>
+                            <li><a class="dropDown-item header-btn" href="#">New Arrival</a></li>
+                            <li><a class="dropDown-item header-btn" href="#">Latest</a></li>
+                            <li><a class="dropDown-item header-btn" href="#">Shop The Look</a></li>
+                            <li><a class="dropDown-item header-btn" href="#">Useful Tips</a></li>
+                            <li><a class="dropDown-item header-btn" href="#">Sale</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="w3-hover-text-red txt20 mouseCursor lapDesktop-hidden">NEW ARRIVAL</div>
-                <div class="w3-hover-text-red txt20 mouseCursor lapDesktop-hidden">SALE</div>
+                <div class="txt20 mouseCursor lapDesktop-hidden">
+                    <a class="header-btn" href="#">NEW ARRIVAL</a>
+                </div>
+                <div class="txt20 mouseCursor lapDesktop-hidden">
+                    <a class="header-btn" href="#">SALE</a>
+                </div>
                 <div class="txt20 mouseCursor phoneTablet-mobile"><img src="assets/images/home/asset2.png" alt=""/></div>
                 <div class="txt20 mouseCursor phoneTablet-mobile"><img src="assets/images/home/asset3.png" alt=""/></div>
                 <div class="txt20 cartStoreBg justify-middle-contents phoneTablet-mobile">
                     <div class="mouseCursor"><img class="bagTop" src="assets/images/home/asset4.png" alt=""/></div>
                 </div>
 
-                <div class="w3-display-bottomright bagBtn mouseCursor phoneTablet-mobile">Bag</div>
+                <div class="bagBtn mouseCursor phoneTablet-mobile">Bag</div>
             </div>
         </div>
         <hr class=""/>
 
         <div class="rL-float rL-margin">
             <div class="margin-center-width justify-middle-contents title-top">
-                20% OFF Memorial Data memo
+                20% OFF Memorial Data Memorial Day Sale! use code: memo
             </div>
         </div>
     </header>
 
     <section>
-
         <div class="rL-float rL-margin">
-        <div id="owlSliderIPhone" class="owl-carousel owl-theme">
-
+            <div id="owlSliderIPhone" class="owl-carousel owl-theme">
                 <img class="iPhone-width" src="assets/images/home/asset5.png" alt="" />
                 <img class="iPhone-width" src="assets/images/home/asset5.png" alt="" />
                 <img class="iPhone-width" src="assets/images/home/asset5.png" alt="" />
             </div>
-
         </div>
-
-
-
     </section>
-
 
     <section>
         <div class="rL-margin">
-            <div class="w3-center cases-heart-txt">
+            <div class="alignC cases-heart-txt">
                 Cases Form All The He<a class="txt-red"> Art</a><img class="icon-art-left" src="assets/images/home/heartLong.png" alt="" />
             </div>
 
-            <div class="w3-center middle-txt">
+            <div class="alignC middle-txt">
                 Choose from our unique selection of Airpods and Iphone cases
             </div>
 
-            <div class="w3-center middle-txt">
+            <div class="alignC middle-txt">
                 New designs every week, fast shipping 60 day money back quarantee
             </div>
 
-            <div class="w3-center middle-txt txt-red txt-red-top mouseCursor">More ...</div>
+            <div class="alignC middle-txt txt-red txt-red-top mouseCursor">More ...</div>
         </div>
     </section>
 
 <!--  Last Viewed  -->
     <section>
-        <div class="w3-center cases-heart-txt">Last Viewed</div>
+        <div class="alignC cases-heart-txt">Last Viewed</div>
 
         <div class="rL-slider">
             <div class="justify-middle-contents">
-                <div class="gridWidth w3-center">
+                <div class="gridWidth alignC">
                     <div id="owlSliderLastViewed" class="owl-carousel owl-theme">
 
                         <div class="card-bg-slider">
@@ -159,10 +163,10 @@
                                     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
                                 </div>
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row rL-float star-width">
+                            <div class="star-width">
                                 <span id="starReview1" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -178,10 +182,10 @@
                                     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
                                 </div>
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row rL-float star-width">
+                            <div class="star-width">
                                 <span id="starReview2" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
@@ -198,10 +202,10 @@
                                     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
                                 </div>
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row rL-float star-width">
+                            <div class="star-width">
                                 <span id="starReview3" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
@@ -218,10 +222,10 @@
                                     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
                                 </div>
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row rL-float star-width">
+                            <div class="star-width">
                                 <span id="starReview4" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
@@ -238,10 +242,10 @@
                                     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
                                 </div>
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row rL-float star-width">
+                            <div class="star-width">
                                 <span id="starReview5" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
@@ -258,10 +262,10 @@
                                     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
                                 </div>
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row rL-float star-width">
+                            <div class="star-width">
                                 <span id="starReview6" class="star-column"></span> <a class="txt-star">25 reviews</a>
                             </div>
 
@@ -277,14 +281,14 @@
         </div>
 
         <div class="rL-air-iphone">
-            <div class="w3-row">
-                <div class="w3-col l4 m4">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4">
                     <img class="product-size3" src="assets/images/home/lastView9.png" alt="" />
                 </div>
-                <div class="w3-col l4 m4">
+                <div class="col-lg-4 col-sm-4">
                     <img class="product-size3" src="assets/images/home/lastView10.png" alt="" />
                 </div>
-                <div class="w3-col l4 m4">
+                <div class="col-lg-4 col-sm-4">
                     <img class="product-size3" src="assets/images/home/lastView11.png" alt="" />
                 </div>
             </div>
@@ -295,14 +299,14 @@
         </div>
     </section>
 
-<!--  New Arrivals -->
+    <!--  New Arrivals -->
     <section>
-        <div class="w3-center cases-heart-txt">New Arrivals</div>
+        <div class="alignC cases-heart-txt">New Arrivals</div>
 
         <div class="grid-new-arrivals">
-            <div class="w3-row justify-middle-contents">
-                <div class="w3-col w3-center">
-                    <div class="flex-card">
+            <div class="row justify-middle-contents">
+                <div class="col alignC">
+                    <div class="flex-card-star">
                         <div class="card-bg-slider grid-card-bottom">
                             <div class="rL-float">
                                 <div class="icon-size1">
@@ -314,10 +318,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview7"></span>
                             </div>
 
@@ -335,10 +339,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview8"></span><a class="txt-star">25 reviews</a>
                             </div>
 
@@ -356,10 +360,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview9"></span>
                             </div>
 
@@ -377,10 +381,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview10"></span><a class="txt-star">25 reviews</a>
                             </div>
 
@@ -398,10 +402,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview11"></span>
                             </div>
 
@@ -419,10 +423,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview12"></span><a class="txt-star">25 reviews</a>
                             </div>
 
@@ -440,10 +444,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview13"></span>
                             </div>
 
@@ -461,10 +465,10 @@
                                 </div>
                             </div>
 
-                            <div class="w3-row">
+                            <div class="">
                                 <img class="img-item product-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
-                            <div class="w3-row">
+                            <div class="">
                                 <span id="starReview14"></span><a class="txt-star">25 reviews</a>
                             </div>
 
@@ -475,18 +479,18 @@
             </div>
         </div>
 
-        <div class="w3-center">
+        <div class="alignC">
             <div class="btn-all justify-middle-contents">All</div>
         </div>
     </section>
 
 <!--  Shop the Look  -->
     <section>
-        <div class="w3-center cases-heart-txt">Shop the Look</div>
+        <div class="alignC cases-heart-txt">Shop the Look</div>
 
         <div class="justify-middle-contents">
-            <div class="w3-row">
-                <div class="w3-col w3-center">
+            <div class="">
+                <div class="alignC">
                     <div class="flex-card-shop">
                         <div class="card-shop">
                             <img class="img-item" src="assets/images/home/shopLook1.png" alt="" />
@@ -524,18 +528,18 @@
             </div>
         </div>
 
-        <div class="w3-center">
+        <div class="alignC">
             <div class="btn-all justify-middle-contents">All</div>
         </div>
     </section>
 
 <!--  Reviews  -->
     <section>
-        <div class="w3-center cases-heart-txt">Reviews</div>
+        <div class="alignC cases-heart-txt">Reviews</div>
 
         <div class="rL-slider">
             <div class="justify-middle-contents">
-                <div class="gridWidth w3-center">
+                <div class="gridWidth alignC">
                     <div id="owlSliderReviews" class="owl-carousel owl-theme">
 
                         <div class="card-review-slider">
@@ -550,14 +554,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -575,14 +579,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -600,14 +604,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -625,14 +629,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -650,14 +654,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -675,14 +679,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -700,14 +704,14 @@
                                 It's going perfect a little a big but hence the hanging, and it looks strong and tough for me a 10.
                             </div>
 
-                            <div class="w3-row">
-                                <div class="w3-col l4 m4 s4">
+                            <div class="row">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews1.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews2.png" alt="" />
                                 </div>
-                                <div class="w3-col l4 m4 s4">
+                                <div class="col-4">
                                     <img class="threeImg" src="assets/images/home/reviews3.png" alt="" />
                                 </div>
                             </div>
@@ -721,26 +725,26 @@
         <!--  Fast shipping & 60 - Days free return ...  -->
         <div class="grid-new-arrivals">
             <div class="fast-support">
-                <div class="w3-row">
-                    <div class="w3-col l3 m12">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12">
                         <div class=""><img src="assets/images/home/fastShipping.png" alt="" /> </div>
                         <div class="txt-shipping">Fast Shipping</div>
                         <div class="txt-shipping-small">It's going perfect a little blg but hence the hanging.</div>
                     </div>
 
-                    <div class="w3-col l3 m12">
+                    <div class="col-lg-3 col-sm-12">
                         <div class=""><img src="assets/images/home/freeReturn.png" alt="" /> </div>
                         <div class="txt-shipping">60-Days free return</div>
                         <div class="txt-shipping-small">It's going perfect a little blg but hence the hanging.</div>
                     </div>
 
-                    <div class="w3-col l3 m12">
+                    <div class="col-lg-3 col-sm-12">
                         <div class=""><img src="assets/images/home/newDesigns.png" alt="" /> </div>
                         <div class="txt-shipping">New designs every week</div>
                         <div class="txt-shipping-small">It's going perfect a little blg but hence the hanging.</div>
                     </div>
 
-                    <div class="w3-col l3 m12">
+                    <div class="col-lg-3 col-sm-12">
                         <div class=""><img src="assets/images/home/support.png" alt="" /> </div>
                         <div class="txt-shipping">24/7 Support</div>
                         <div class="txt-shipping-small">It's going perfect a little blg but hence the hanging.</div>
@@ -752,19 +756,18 @@
 
     <!--  Useful Tips  -->
     <section>
-        <div class="w3-center cases-heart-txt">Useful Tips</div>
-
+        <div class="alignC cases-heart-txt">Useful Tips</div>
         <div class="rL-slider">
             <div class="justify-middle-contents">
-                <div class="gridWidth w3-center">
+                <div class="gridWidth alignC">
                     <div id="owlSliderTips" class="owl-carousel owl-theme">
                         <div class="card-tips-slider">
                             <div class="rL-float">
-                                <div class="w3-row">
-                                    <div class="w3-col imgWidth">
+                                <div class="resRow">
+                                    <div class="resCol imgWidth">
                                         <img class="useful-sony-img" src="assets/images/home/usefulTips.png" alt="" />
                                     </div>
-                                    <div class="w3-col imgTxtWidth">
+                                    <div class="resCol imgTxtWidth">
                                         <div class="sonyTitleTxt">
                                             Can't decide between Apple AirPods and Sony WF-1000XM3?
                                         </div>
@@ -778,7 +781,7 @@
                                         <div class="sonyMoreTxt">
                                             More ...
                                         </div>
-                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                        <div class="display-BL sonyDateTxt">March 23, 2020</div>
                                     </div>
                                 </div>
                             </div>
@@ -786,11 +789,11 @@
 
                         <div class="card-tips-slider">
                             <div class="rL-float">
-                                <div class="w3-row">
-                                    <div class="w3-col imgWidth">
+                                <div class="resRow">
+                                    <div class="resCol imgWidth">
                                         <img class="useful-sony-img" src="assets/images/home/sony.png" alt="" />
                                     </div>
-                                    <div class="w3-col imgTxtWidth">
+                                    <div class="resCol imgTxtWidth">
                                         <div class="sonyTitleTxt">
                                             Can't decide between Apple AirPods and Sony WF-1000XM3?
                                         </div>
@@ -804,7 +807,7 @@
                                         <div class="sonyMoreTxt">
                                             More ...
                                         </div>
-                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                        <div class="display-BL sonyDateTxt">March 23, 2020</div>
                                     </div>
                                 </div>
                             </div>
@@ -812,11 +815,11 @@
 
                         <div class="card-tips-slider">
                             <div class="rL-float">
-                                <div class="w3-row">
-                                    <div class="w3-col imgWidth">
+                                <div class="resRow">
+                                    <div class="resCol imgWidth">
                                         <img class="useful-sony-img" src="assets/images/home/usefulTips.png" alt="" />
                                     </div>
-                                    <div class="w3-col imgTxtWidth">
+                                    <div class="resCol imgTxtWidth">
                                         <div class="sonyTitleTxt">
                                             Can't decide between Apple AirPods and Sony WF-1000XM3?
                                         </div>
@@ -830,7 +833,7 @@
                                         <div class="sonyMoreTxt">
                                             More ...
                                         </div>
-                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                        <div class="display-BL sonyDateTxt">March 23, 2020</div>
                                     </div>
                                 </div>
                             </div>
@@ -838,11 +841,11 @@
 
                         <div class="card-tips-slider">
                             <div class="rL-float">
-                                <div class="w3-row">
-                                    <div class="w3-col imgWidth">
+                                <div class="resRow">
+                                    <div class="resCol imgWidth">
                                         <img class="useful-sony-img" src="assets/images/home/sony.png" alt="" />
                                     </div>
-                                    <div class="w3-col imgTxtWidth">
+                                    <div class="resCol imgTxtWidth">
                                         <div class="sonyTitleTxt">
                                             Can't decide between Apple AirPods and Sony WF-1000XM3?
                                         </div>
@@ -856,7 +859,7 @@
                                         <div class="sonyMoreTxt">
                                             More ...
                                         </div>
-                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                        <div class="display-BL sonyDateTxt">March 23, 2020</div>
                                     </div>
                                 </div>
                             </div>
@@ -864,11 +867,11 @@
 
                         <div class="card-tips-slider">
                             <div class="rL-float">
-                                <div class="w3-row">
-                                    <div class="w3-col imgWidth">
+                                <div class="resRow">
+                                    <div class="resCol imgWidth">
                                         <img class="useful-sony-img" src="assets/images/home/usefulTips.png" alt="" />
                                     </div>
-                                    <div class="w3-col imgTxtWidth">
+                                    <div class="resCol imgTxtWidth">
                                         <div class="sonyTitleTxt">
                                             Can't decide between Apple AirPods and Sony WF-1000XM3?
                                         </div>
@@ -882,7 +885,7 @@
                                         <div class="sonyMoreTxt">
                                             More ...
                                         </div>
-                                        <div class="w3-display-bottomleft sonyDateTxt">March 23, 2020</div>
+                                        <div class="display-BL sonyDateTxt">March 23, 2020</div>
                                     </div>
                                 </div>
                             </div>
@@ -894,56 +897,55 @@
     </section>
 
 <!--  Footer  -->
-    <section class="footerBg">
-
+    <footer class="footerBg">
         <div class="footer-padding">
             <div class="justify-middle-contents">
                 <div class="txt-font-color1 red-line1">
-                    <div class="w3-left">Get 10% off your next order</div>
-                    <div class="w3-left txt-font-color2">Sign up for our newsletter</div>
+                    <div class="alignL">Get 10% off your next order</div>
+                    <div class="alignL txt-font-color2">Sign up for our newsletter</div>
                 </div>
             </div>
 
             <div class="input-filed">
-                <input class="w3-input" type="text" placeholder="Get@25dollargift.com" />
-                <div class="w3-display-bottomright btn-subscribe justify-middle-contents">Subscribe</div>
+                <input class="air-input" type="text" placeholder="Get@25dollargift.com" />
+                <div class="display-BR btn-subscribe justify-middle-contents">Subscribe</div>
             </div>
 
 
-            <div class="w3-row left-padding">
-                <div class="w3-col icon-width1">
-                    <div class="w3-row">
-                        <div class="w3-col img-width">
+            <div class="resRow left-padding">
+                <div class="resCol icon-width1">
+                    <div class="resRow">
+                        <div class="resCol img-width">
                             <img src="assets/images/home/trackOrder.png" alt="" />
                         </div>
 
-                        <div class="w3-rest txt-font-color4">
+                        <div class="resCol img-rest txt-font-color4">
                             <div>Track Your</div>
                             <div>Order</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="w3-col icon-width2">
-                    <div class="w3-row">
-                        <div class="w3-col img-width">
+                <div class="resCol icon-width2">
+                    <div class="resRow">
+                        <div class="resCol img-width">
                             <img src="assets/images/home/visitCenter.png" alt="" />
                         </div>
 
-                        <div class="w3-rest txt-font-color4">
+                        <div class="resCol img-rest txt-font-color4">
                             <div>Need Help?</div>
                             <div>Visit our Help Center</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="w3-col icon-width3">
-                    <div class="w3-row">
-                        <div class="w3-col img-width">
+                <div class="resCol icon-width3">
+                    <div class="resRow">
+                        <div class="resCol img-width">
                             <img src="assets/images/home/emailUs.png" alt="" />
                         </div>
 
-                        <div class="w3-rest txt-font-color4">
+                        <div class="resCol img-rest txt-font-color4">
                             <div>Email Us</div>
                             <div>support@iheartmycase.com</div>
                         </div>
@@ -951,8 +953,8 @@
                 </div>
             </div>
 
-            <div class="w3-row top-padding left-padding">
-                <div class="w3-col collections-width">
+            <div class="resRow top-padding left-padding">
+                <div class="resCol collections-width">
                     <div class="txt-font-color1 red-line-collections">
                         Collections
                     </div>
@@ -964,7 +966,7 @@
                     <div class="txt-font-color5 item-padding">New Arrivals</div>
                 </div>
 
-                <div class="w3-col company-width">
+                <div class="resCol company-width">
                     <div class="txt-font-color1 red-line-company">
                         Company
                     </div>
@@ -977,7 +979,7 @@
                     <div class="txt-font-color5 item-padding">Contact Us</div>
                 </div>
 
-                <div class="w3-col touch-width">
+                <div class="resCol touch-width">
                     <div class="txt-font-color1 red-line-touch">
                         Get In Touch
                     </div>
@@ -992,7 +994,7 @@
                     <div class="txt-font-color5 item-padding-small">Dallas, TX 75208</div>
                 </div>
 
-                <div class="w3-col stranger-width">
+                <div class="resCol stranger-width">
                     <div class="txt-font-color1 red-line-stranger">
                         Don't be a stranger
                     </div>
@@ -1014,32 +1016,40 @@
                     <i class="far fa-copyright"></i> 2020 iHeartMyCase.com
                 </div>
 
-                <div class="paymentLink justify-middle-contents">
-                    <div class="w3-bar phoneTablet-center">
-                        <div class="w3-bar-item">
-                            <div class="txt-font-color6 secure-right">Secure Payments</div>
-                        </div>
-                        <div class="w3-bar-item">
-                            <img class="payment-icon" src="assets/images/home/paypal-icon.png" alt="" />
-                        </div>
-                        <div class="w3-bar-item">
-                            <img class="payment-icon" src="assets/images/home/visa-icon.png" alt="" />
-                        </div>
-                        <div class="w3-bar-item">
-                            <img class="payment-icon" src="assets/images/home/blockchain-icon.png" alt="" />
-                        </div>
-                        <div class="w3-bar-item">
-                            <img class="payment-icon" src="assets/images/home/experience-icon.png" alt="" />
-                        </div>
-                    </div>
-                </div>
+                <li class="paymentLink justify-middle-contents">
+                    <ul class="navbar-nav navbar-expand-lg phoneTablet-center">
+                        <li class="nav-item">
+                            <a class="txt-font-color6 justify-middle-contents secure-right">Secure Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="payment-icon" src="assets/images/home/paypal-icon.png" alt="" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="payment-icon" src="assets/images/home/visa-icon.png" alt="" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="payment-icon" src="assets/images/home/blockchain-icon.png" alt="" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="payment-icon" src="assets/images/home/experience-icon.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
                 <div class="txt-font-color6 phone-shown">
                     <i class="far fa-copyright"></i> 2020 iHeartMyCase.com
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 </div>
 
 <script>
