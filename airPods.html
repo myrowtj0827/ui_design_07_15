@@ -144,31 +144,47 @@
 
     <!--  New Arrivals -->
     <section>
-
-        <select className="productList-option">
-            <option selected disabled>Country</option>
-            <option>Spain</option>
-            <option>Italy</option>
-            <option>Russia</option>
-            <option>Poland</option>
-            <option>India</option>
-            <option>South Africa</option>
-        </select>
-
-
-
         <div class="airProducts-grid">
+            <div class="select-switch">
+                <span>
+                    <select class="productList-option">
+                        <option selected disabled>Choose Device</option>
+                        <option><a class="txtHover">AirPods Pro</a></option>
+                        <option><a class="txtHover">iPhone 11 Pro Max</a></option>
+                        <option><a class="txtHover">iPhone 11 Pro</a></option>
+                        <option><a class="txtHover">AirPods Wireless</a></option>
+                    </select>
+                </span>
+
+                <span class="">
+                    <label class="switchBtn">
+                        <input type="checkbox">
+                        <div class="slide round"></div>
+                    </label>
+                </span>
+
+                <span class="days-shipping">
+                    2 Days Shipping
+                </span>
+            </div>
+
+            <div class="justify-middle-contents">
+                <span class="days-phoneShown">
+                    2 Days Shipping
+                </span>
+            </div>
+
             <div class="justify-middle-contents">
                 <div class="alignC">
                     <div class="flex-airCard-star">
                         <div class="air-card-bg-slider air-cardB">
                             <div class="rL-float">
-                                <div class="icon-size1">
-                                    <div>45%</div>
+                                <div class="icon-size1 percentY">
+                                    <div>35%</div>
                                     <div>OFF</div>
                                 </div>
                                 <div class="icon-size2 justify-middle-contents off245">
-                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />
                                 </div>
                             </div>
 
@@ -188,8 +204,14 @@
                                     <div>45%</div>
                                     <div>OFF</div>
                                 </div>
+
+                                <div class="iconOrange">
+                                    <div>2 days</div>
+                                    <div>shipping</div>
+                                </div>
+
                                 <div class="icon-size2 justify-middle-contents off245">
-                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />
                                 </div>
                             </div>
 
@@ -205,12 +227,12 @@
 
                         <div class="air-card-bg-slider air-cardB">
                             <div class="rL-float">
-                                <div class="icon-size1">
-                                    <div>45%</div>
+                                <div class="icon-size1 percentY">
+                                    <div>35%</div>
                                     <div>OFF</div>
                                 </div>
                                 <div class="icon-size2 justify-middle-contents off245">
-                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />
                                 </div>
                             </div>
 
@@ -230,8 +252,13 @@
                                     <div>45%</div>
                                     <div>OFF</div>
                                 </div>
+                                <div class="iconOrange">
+                                    <div>2 days</div>
+                                    <div>shipping</div>
+                                </div>
+
                                 <div class="icon-size2 justify-middle-contents off245">
-                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-icon-red.png" alt="" />
+                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />
                                 </div>
                             </div>
 
@@ -244,33 +271,34 @@
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="alignC">
-            <div class="btn-all justify-middle-contents">All</div>
+        <div class="alignC justify-middle-contents productListB">
+            <ul class="navbar-nav navbar-expand-lg justify-middle-contents">
+                <li class="nav-item padding-NP left-fixing">
+                    <img class="prev-next" src="assets/images/collections/arrow-left-black.png" alt="" />
+                </li>
+                <li class="nav-item padding-btn justify-middle-contents">
+                    1
+                </li>
+                <li class="nav-item padding-btn justify-middle-contents">
+                    2
+                </li>
+                <li class="nav-item padding-btn justify-middle-contents">
+                    3
+                </li>
+                <li class="nav-item padding-btn justify-middle-contents">
+                    4
+                </li>
+                <li class="nav-item padding-NP right-fixing">
+                    <img class="prev-next" src="assets/images/collections/arrow-right-black.png" alt="" />
+                </li>
+            </ul>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <section class="airCase-bg">
         <div class="paddingTB">
@@ -300,7 +328,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="paddingTB imy-padding">
             <div class="imyCase-bg">
@@ -498,14 +525,13 @@
 </div>
 </body>
 
-
 <script>
     /**
      * Making the star marking
      * @type {number[]}
      * starArray is the review count array per each products
      */
-    let starArray = [1, 2, 3, 4, 4, 4, 5, 5, 5, 5, 5, 3, 2, 4, 5, 0, 2, 5, 4, 3, 5];
+    let starArray = [1, 2, 3, 4, 4, 4, 0, 5, 0, 5, 0, 3, 2, 4, 5, 0, 2, 5, 4, 3, 5];
     let id_star;
     for(let k = 1; k <= starArray.length; k ++) {
         id_star = 'starReview' + k.toString();
@@ -522,24 +548,43 @@
         }
     }
 
+
+    // <div class="icon-size2 justify-middle-contents off245">
+    //     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />
+    //     </div>
+
     /**
-     * Arrow replacing
+     * Heart Hover Replacing
      */
-    $('.collections img').mouseenter(function () {
-        $(this).attr('src', 'assets/images/home/downBtnRed.png')
+    $('.icon-size2').mouseenter(function() {
+        $(this).find('img').attr('src', 'assets/images/home/heart-icon-white.png')
     });
 
-    $('.collections img').mouseleave(function () {
-        $(this).attr('src', 'assets/images/home/downBtnBlack.png')
+    $('.icon-size2').mouseleave(function() {
+        $(this).find('img').attr('src', 'assets/images/home/heart-line.png')
     });
 
-    $('.collections span').mouseenter(function () {
-        $('.collections img').attr('src', 'assets/images/home/downBtnRed.png')
+
+    /**
+     * Product List Arrow
+     */
+    $('.left-fixing img').mouseenter(function() {
+        $(this).attr('src', 'assets/images/collections/arrow-left-red.png')
     });
 
-    $('.collections span').mouseleave(function () {
-        $('.collections img').attr('src', 'assets/images/home/downBtnBlack.png')
+    $('.left-fixing img').mouseleave(function() {
+        $(this).attr('src', 'assets/images/collections/arrow-left-black.png')
     });
+
+    $('.right-fixing img').mouseenter(function() {
+        $(this).attr('src', 'assets/images/collections/arrow-right-red.png')
+    });
+
+    $('.right-fixing img').mouseleave(function() {
+        $(this).attr('src', 'assets/images/collections/arrow-right-black.png')
+    });
+
+
 
 </script>
 </html>

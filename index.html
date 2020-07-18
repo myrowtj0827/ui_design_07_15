@@ -1075,6 +1075,19 @@
         }
     }
 
+
+    /**
+     * Heart Hover Replacing
+     */
+    $('.icon-size2').mouseenter(function() {
+        $(this).find('img').attr('src', 'assets/images/home/heart-icon-white.png')
+    });
+
+    $('.icon-size2').mouseleave(function() {
+        $(this).find('img').attr('src', 'assets/images/home/heart-icon-red.png')
+    });
+
+
     /**
      * Arrow replacing
      */
