@@ -176,7 +176,8 @@
 
             <div class="justify-middle-contents">
                 <div class="alignC">
-                    <div class="flex-airCard-star">
+                    <div id="productList" class="flex-airCard-star">
+
                         <div class="air-card-bg-slider air-cardB">
                             <div class="rL-float">
                                 <div class="icon-size1 percentY">
@@ -192,7 +193,7 @@
                                 <img class="img-item productList-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
                             <div>
-                                <span id="starReview7"></span>
+                                <span id="starReview1"></span>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -219,7 +220,7 @@
                                 <img class="img-item productList-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
                             <div>
-                                <span id="starReview8"></span><a class="txt-star">25 reviews</a>
+                                <span id="starReview2"></span><a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -240,7 +241,7 @@
                                 <img class="img-item productList-size1" src="assets/images/home/lastView2.png" alt="" />
                             </div>
                             <div>
-                                <span id="starReview9"></span>
+                                <span id="starReview3"></span>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -266,7 +267,7 @@
                                 <img class="img-item productList-size2" src="assets/images/home/lastView8.png" alt="" />
                             </div>
                             <div>
-                                <span id="starReview10"></span><a class="txt-star">25 reviews</a>
+                                <span id="starReview4"></span><a class="txt-star">25 reviews</a>
                             </div>
 
                             <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>
@@ -277,23 +278,23 @@
         </div>
 
         <div class="alignC justify-middle-contents productListB">
-            <ul class="navbar-nav navbar-expand-lg justify-middle-contents">
-                <li class="nav-item padding-NP left-fixing">
+            <ul id="btnArray" class="navbar-nav navbar-expand-lg justify-middle-contents">
+                <li id="btnPrev" class="nav-item padding-NP left-fixing page-btn" page="5">
                     <img class="prev-next" src="assets/images/collections/arrow-left-black.png" alt="" />
                 </li>
-                <li class="nav-item padding-btn justify-middle-contents">
+                <li id="btnNum1" class="nav-item padding-btn justify-middle-contents page-btn" page="1">
                     1
                 </li>
-                <li class="nav-item padding-btn justify-middle-contents">
+                <li id="btnNum2" class="nav-item padding-btn justify-middle-contents page-btn" page="2">
                     2
                 </li>
-                <li class="nav-item padding-btn justify-middle-contents">
+                <li id="btnNum3" class="nav-item padding-btn justify-middle-contents page-btn" page="3">
                     3
                 </li>
-                <li class="nav-item padding-btn justify-middle-contents">
+                <li id="btnNum4" class="nav-item padding-btn justify-middle-contents page-btn" page="4">
                     4
                 </li>
-                <li class="nav-item padding-NP right-fixing">
+                <li id="btnNext" class="nav-item padding-NP right-fixing page-btn" page="6">
                     <img class="prev-next" src="assets/images/collections/arrow-right-black.png" alt="" />
                 </li>
             </ul>
@@ -526,35 +527,140 @@
 </body>
 
 <script>
+    let starArray = [0, 1, 2, 3, 3, 5, 4, 0, 2, 1, 5, 3, 4, 0, 1, 2, 3, 3, 5, 4, 0, 2, 1, 5, 3, 4, 0, 1, 2, 3, 3, 5, 4, 0, 2, 1, 5, 3, 4, 0, 1, 2, 3, 3, 5, 4, 0, 2, 1, 5, 3, 4, 0, 1, 2, 3, 3, 5, 4, 0, 2, 1, 5, 3, 4]
+    let id_star;
+
+    /**
+     * Product Showing
+     *
+     * nCount is the product number per page
+     *
+     * btnOrder is the identification of the button
+     *
+     * fistP is the the element position of the Database
+     */
+    const nCount = 16;
+    let btnOrder = 0;
+    let firstP = 0;
+
+    $(".page-btn").click(function () {
+        let nPage = Number($(this).attr('page'));
+        if (nPage === 5) {
+            if ((btnOrder === 0) || (btnOrder === 1)) {
+                btnOrder = 4;
+            } else {
+                btnOrder -= 1;
+            }
+        }
+
+        if (nPage === 6) {
+            if (btnOrder === 4) {
+                btnOrder = 1;
+            } else {
+                btnOrder += 1;
+            }
+        }
+
+        if(nPage < 5) {
+            btnOrder = nPage;
+        }
+
+        firstP = (btnOrder - 1) * nCount;
+
+        console.log(btnOrder,'->', firstP);
+        creatingProducts();
+    });
+
+    if(btnOrder === 0) {
+        btnOrder = 1;
+        firstP = 0;
+        creatingProducts();
+    }
+
+    function creatingProducts() {
+        document.getElementById('productList').innerHTML = '';
+        for(let k = firstP; k < firstP + nCount; k ++) {
+            id_star = 'starReview' + k.toString();
+
+            if (k % 2 === 1) {
+                document.getElementById('productList').innerHTML += '<div class="air-card-bg-slider air-cardB">\n' +
+                    '                            <div class="rL-float">\n' +
+                    '                                <div class="icon-size1 percentY">\n' +
+                    '                                    <div>35%</div>\n' +
+                    '                                    <div>OFF</div>\n' +
+                    '                                </div>\n' +
+                    '                                <div class="icon-size2 justify-middle-contents off245">\n' +
+                    '                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />\n' +
+                    '                                </div>\n' +
+                    '                            </div>\n' +
+                    '\n' +
+                    '                            <div>\n' +
+                    '                                <img class="img-item productList-size1" src="assets/images/home/lastView2.png" alt="" />\n' +
+                    '                            </div>\n' +
+                    '                            <div>\n' +
+                    '                                <span id="'+ id_star +'"></span>\n' +
+                    '                            </div>\n' +
+                    '\n' +
+                    '                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>\n' +
+                    '                        </div>';
+            } else {
+                document.getElementById('productList').innerHTML += '<div class="air-card-bg-slider air-cardB">\n' +
+                    '                            <div class="rL-float">\n' +
+                    '                                <div class="icon-size1">\n' +
+                    '                                    <div>45%</div>\n' +
+                    '                                    <div>OFF</div>\n' +
+                    '                                </div>\n' +
+                    '\n' +
+                    '                                <div class="iconOrange">\n' +
+                    '                                    <div>2 days</div>\n' +
+                    '                                    <div>shipping</div>\n' +
+                    '                                </div>\n' +
+                    '\n' +
+                    '                                <div class="icon-size2 justify-middle-contents off245">\n' +
+                    '                                    245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />\n' +
+                    '                                </div>\n' +
+                    '                            </div>\n' +
+                    '\n' +
+                    '                            <div>\n' +
+                    '                                <img class="img-item productList-size2" src="assets/images/home/lastView8.png" alt="" />\n' +
+                    '                            </div>\n' +
+                    '                            <div>\n' +
+                    '                                <span id="' + id_star + '"></span><a class="txt-star">25 reviews</a>\n' +
+                    '                            </div>\n' +
+                    '\n' +
+                    '                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>\n' +
+                    '                        </div>';
+            }
+        }
+        creatingStars();
+    }
+
     /**
      * Making the star marking
      * @type {number[]}
      * starArray is the review count array per each products
      */
-    let starArray = [1, 2, 3, 4, 4, 4, 0, 5, 0, 5, 0, 3, 2, 4, 5, 0, 2, 5, 4, 3, 5];
-    let id_star;
-    for(let k = 1; k <= starArray.length; k ++) {
-        id_star = 'starReview' + k.toString();
-        if ($('#' + id_star).length !== 0) {
-            document.getElementById(id_star).innerHTML = '';
 
-            for (let yStar = 1; yStar <= starArray[k - 1]; yStar ++) {
-                document.getElementById(id_star).innerHTML += '<span><img src="assets/images/home/lastView-yellow.png" alt="" /></span>';
-            }
+    function creatingStars() {
+        for(let k = 1; k <= starArray.length; k ++) {
+            id_star = 'starReview' + k.toString();
+            if ($('#' + id_star).length !== 0) {
+                document.getElementById(id_star).innerHTML = '';
 
-            for (let gStar = 5; gStar > starArray[k - 1]; gStar --) {
-                document.getElementById(id_star).innerHTML += '<span><img src="assets/images/home/lastView-gray.png" alt="" /></span>';
+                for (let yStar = 1; yStar <= starArray[k - 1]; yStar ++) {
+                    document.getElementById(id_star).innerHTML += '<span><img src="assets/images/home/lastView-yellow.png" alt="" /></span>';
+                }
+
+                for (let gStar = 5; gStar > starArray[k - 1]; gStar --) {
+                    document.getElementById(id_star).innerHTML += '<span><img src="assets/images/home/lastView-gray.png" alt="" /></span>';
+                }
             }
         }
     }
 
-
-    // <div class="icon-size2 justify-middle-contents off245">
-    //     245 <img class="heart-icon-size hover-hidden" src="assets/images/home/heart-line.png" alt="" />
-    //     </div>
-
     /**
      * Heart Hover Replacing
+     *
      */
     $('.icon-size2').mouseenter(function() {
         $(this).find('img').attr('src', 'assets/images/home/heart-icon-white.png')
@@ -564,9 +670,9 @@
         $(this).find('img').attr('src', 'assets/images/home/heart-line.png')
     });
 
-
     /**
      * Product List Arrow
+     *
      */
     $('.left-fixing img').mouseenter(function() {
         $(this).attr('src', 'assets/images/collections/arrow-left-red.png')
@@ -583,8 +689,5 @@
     $('.right-fixing img').mouseleave(function() {
         $(this).attr('src', 'assets/images/collections/arrow-right-black.png')
     });
-
-
-
 </script>
 </html>
