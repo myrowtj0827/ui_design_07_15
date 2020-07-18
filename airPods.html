@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>AirPods Cases</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,12 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <script src="/assets/js/zepto-1.1.6.min.js"></script>
-    <script src="./assets/js/bootstrap3.4.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <link rel="stylesheet" href="./assets/css/bootstrap3.4.1.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap4.0.0.min.css">
-    <link rel="stylesheet" href="./assets/css/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
 
@@ -133,7 +130,7 @@
                         <div class="small-bold-txt">
                             AirPods Pro are the only in-ear headphones with Active Noise Cancellation that continuously adapts
                             to the geometry of your ear and the fit of the ear tips - blocking out the world so you can focus on what you're listening to
-                            <a class="small-red-txt"> more...</a>
+                            <span class="small-red-txt"> more...</span>
                         </div>
                     </div>
 
@@ -631,6 +628,18 @@
                     '                            <div class="txt-description">Armor Silicone Airpods Pro Case Cover</div>\n' +
                     '                        </div>';
             }
+
+            /**
+             * Heart Hover Replacing
+             *
+             */
+            $('.icon-size2').mouseenter(function() {
+                $(this).find('img').attr('src', 'assets/images/home/heart-icon-white.png')
+            });
+
+            $('.icon-size2').mouseleave(function() {
+                $(this).find('img').attr('src', 'assets/images/home/heart-line.png')
+            });
         }
         creatingStars();
     }
@@ -659,18 +668,6 @@
     }
 
     /**
-     * Heart Hover Replacing
-     *
-     */
-    $('.icon-size2').mouseenter(function() {
-        $(this).find('img').attr('src', 'assets/images/home/heart-icon-white.png')
-    });
-
-    $('.icon-size2').mouseleave(function() {
-        $(this).find('img').attr('src', 'assets/images/home/heart-line.png')
-    });
-
-    /**
      * Product List Arrow
      *
      */
@@ -688,6 +685,25 @@
 
     $('.right-fixing img').mouseleave(function() {
         $(this).attr('src', 'assets/images/collections/arrow-right-black.png')
+    });
+
+    /**
+     * Arrow replacing
+     */
+    $('.collections img').mouseenter(function () {
+        $(this).attr('src', 'assets/images/home/downBtnRed.png')
+    });
+
+    $('.collections img').mouseleave(function () {
+        $(this).attr('src', 'assets/images/home/downBtnBlack.png')
+    });
+
+    $('.collections span').mouseenter(function () {
+        $('.collections img').attr('src', 'assets/images/home/downBtnRed.png')
+    });
+
+    $('.collections span').mouseleave(function () {
+        $('.collections img').attr('src', 'assets/images/home/downBtnBlack.png')
     });
 </script>
 </html>

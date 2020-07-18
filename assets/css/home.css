@@ -481,17 +481,16 @@
      */
     .resCol.m1 {width:8.33333%}
     .resCol.m2{width:16.66666%}
-    .resCol.m3,.w3-quarter{width:24.99999%}
-    .resCol.m4,.w3-third{width:33.33333%}
+    .resCol.m3 {width:24.99999%}
+    .resCol.m4 {width:33.33333%}
     .resCol.m5{width:41.66666%}
-    .resCol.m6,.w3-half{width:49.99999%}
-    .resCol.m7{width:58.33333%}
-    .resCol.m8,.resTwothird{width:66.66666%}
-    .resCol.m9,.resThreequarter{width:74.99999%}
-    .resCol.m10{width:83.33333%}
-    .resCol.m11{width:91.66666%}
-    .resCol.m12{width:99.99999%}
-
+    .resCol.m6 {width:49.99999%}
+    .resCol.m7 {width:58.33333%}
+    .resCol.m8 {width:66.66666%}
+    .resCol.m9 {width:74.99999%}
+    .resCol.m10 {width:83.33333%}
+    .resCol.m11 {width:91.66666%}
+    .resCol.m12 {width:99.99999%}
 
     .owl-theme .owl-nav.disabled+.owl-dots {
         top: 80% !important;
@@ -606,11 +605,6 @@
         display: unset !important;
     }
 
-    .w3-bar .w3-bar-item {
-        float: unset !important;
-        display: inline !important;
-    }
-
     .phone-hidden {
         display: none !important;
     }
@@ -646,6 +640,10 @@
     .display-arrow-left {
         left: -60px!important;
     }
+
+    .paddingTB {
+        max-width: 90% !important;
+    }
 }
 
 /**
@@ -673,7 +671,7 @@
     }
 
     .dropdown-menu {
-        margin: 2px -130px !important;
+        margin: 2px -170px !important;
     }
 
     .rectangle-trans-mobile {
@@ -796,6 +794,11 @@
 
     .display-arrow-left {
         left: -35px !important;
+    }
+
+    .paddingTB {
+        max-width: 100% !important;
+        min-width: 260px !important;
     }
 }
 
@@ -932,6 +935,7 @@ body {
 
 .dropdown-menu {
     margin-top: 25px !important;
+    padding-left: 20px;
     width: 220px !important;
     box-shadow: 0 0 4px #0006;
 }
@@ -939,6 +943,10 @@ body {
 /**
  * dropDown Btn - 1
  */
+
+.header-btn {
+    color: #4E4E4E;
+}
 .header-btn:hover {
     text-decoration: none;
     color: #ED365C !important;
@@ -972,6 +980,7 @@ body {
     padding-left: 5px;
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 2;
 }
 
 .dropDown-item:hover {
@@ -982,7 +991,8 @@ body {
  * dropDown Btn - 2
  */
 .dropdown-menu-mobile {
-    width: 160px !important;
+    width: 170px !important;
+    line-height: 1.5;
 }
 
 .menu-mobile {
@@ -1237,7 +1247,7 @@ hr {
  */
 
 .lastViewed {
-    padding: 93px 215px 73px;
+    padding: 43px 215px;
 }
 
 .rL-air-iphone {
@@ -1370,6 +1380,11 @@ hr {
     max-width: 100%;
 }
 
+.paddingCol {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
 /**
  * slide check
  */
@@ -1415,15 +1430,19 @@ hr {
 }
 
 .txt-shipping {
-    padding-top: 20px;
+    margin-top: 20px;
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+.supportB {
+    margin-bottom: 30px;
 }
 
 .txt-shipping-small {
     padding-bottom: 20px;
     font-size: 1.1rem;
-    max-width: 55%;
+    max-width: 65%;
 }
 
 .txt-width {
@@ -1534,17 +1553,12 @@ hr {
 .resCol.s5{width:41.66666%}.resCol.s6{width:49.99999%}.resCol.s7{width:58.33333%}.resCol.s8{width:66.66666%}
 .resCol.s9{width:74.99999%}.resCol.s10{width:83.33333%}.resCol.s11{width:91.66666%}.resCol.s12{width:99.99999%}
 
-
-
-
-
-
-
 /**
  * Footer
  */
 .footerBg {
     margin-top: 50px;
+    min-width: 300px;
     background-color: #2E3A52;
 }
 
@@ -1615,10 +1629,6 @@ div .footer-hr {
     height: 84px;
 }
 
-.w3-bar .w3-bar-item {
-    padding: 8px 4px !important;
-}
-
 .secure-right {
     margin-top: 10px;
     padding-right: 50px;
@@ -1649,10 +1659,6 @@ div .footer-hr {
 
 ::placeholder {
     font-size: 0.9rem;
-}
-
-.w3-input {
-    padding: 0 0 0 25px !important;
 }
 
 .btn-subscribe {
@@ -1792,7 +1798,7 @@ div .owl-prev:hover {
 .display-arrow-left
 {
     position:absolute;
-    top:37%;
+    top:44%;
     transform:translate(0%,-50%);
     -ms-transform:translate(-0%,-50%)
 }
@@ -2007,6 +2013,10 @@ div .owl-prev:hover {
         left: 0 !important;
         right: 0 !important;
     }
+
+    .productListB {
+        padding-top: 20px !important;
+    }
 }
 
 @media screen and ( max-width: 480px ){
@@ -2091,7 +2101,7 @@ div .owl-prev:hover {
     position: absolute;
     top: 30%;
     padding-left: 60px;
-    width: 450px;
+    width: 490px;
 }
 
 .justify-air-txt {
@@ -2114,8 +2124,7 @@ div .owl-prev:hover {
 
 .large-title,
 .small-bold-txt,
-.small-red-txt,
-.small-txt:hover {
+.small-red-txt {
     font-weight: bold;
     line-height: 1.2;
 }
@@ -2131,6 +2140,7 @@ div .owl-prev:hover {
 .small-red-txt {
     padding-left: 20px;
     color: #ED365C !important;
+    cursor: pointer;
 }
 
 .airCase-bg {
@@ -2139,8 +2149,8 @@ div .owl-prev:hover {
 }
 
 .paddingTB {
-    margin: 20px auto;
-    padding: 20px 20px;
+    margin: 40px auto;
+    padding: 50px 20px 10px;
     border-radius: 15px;
 
     width: 100%;
