@@ -203,7 +203,6 @@
                         </div>
                     </div>
 
-
                     <div class="largeTxtTB">
                         <ul class="navbar-nav navbar-expand-lg rL-float">
                             <li class="nav-item largeTxt">
@@ -565,8 +564,8 @@
                     </div>
 
                     <div class="alignC">
-                        <div class="justify-middle-contents redBtnAdd">
-                            <img class="paddingR" src="assets/images/product/add-card.png" alt="" /> ADD TO BAG
+                        <div id="iPhoneCaseCover" class="justify-middle-contents redBtnAdd">
+                            <img class="paddingR" src="assets/images/product/key-white.png" alt="" /> ADD TO BAG
                         </div>
                     </div>
 
@@ -889,10 +888,75 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section>
+
+<!--  Modal  -->
+    <div id="addBag" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="modal-content-padding">
+                <img class="checkIcon" src="assets/images/product/check-circle-01.png" alt="" />
+                <span class="cardAddingTxt41">Item successfully added to card</span>
+            </div>
+
+            <div class="rL-float modal-content-adding">
+                <div class="productWidth">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="addingImg" src="assets/images/product/modalAdding.png" alt="" />
+                        </div>
+                        <div class="col-lg-8 col-sm-7">
+                            <span class="largeGedTxt35">Black Cat Silicone iPhone Case Cover</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <del class="txtGray">$49.99</del>
+                    <div class="numberRed">$17.99</div>
+                </div>
+            </div>
+
+            <div class="modal-content-padding img-btn-padding justify-content-end">
+                <a href="products.html" class="viewBag-btn justify-middle-contents modalBtnUnderline1">
+                    <img class="key-rightM" src="assets/images/product/key-red.png" alt="" />
+                    VIEW BAG
+                </a>
+                <a href="products.html" class="checkOut-btn justify-middle-contents btnPadding modalBtnUnderline2">
+                    CHECKOUT
+                </a>
+            </div>
+
+            <div class="modalFooterBg">
+                <div class="modalFooter rL-float btn-top">
+                    <div class="modalGrid">
+                         <div>
+                             <div class="alignC"><img class="img-size" src="assets/images/product/secure-payment.png" alt="" /> </div>
+                             <div class="icon-desc modalFooterTxt">Secure Payment</div>
+                         </div>
+
+                        <div>
+                            <div class="alignC"><img class="img-size" src="assets/images/home/fastShipping.png" alt="" /> </div>
+                            <div class="icon-desc modalFooterTxt">Fast & Free Shipping</div>
+                        </div>
+
+                        <div>
+                            <div class="alignC"><img class="img-size" src="assets/images/product/Artwork22_7b6bb7ed-4ac2-4789-bd0d-c703f303d86c.png" alt="" /> </div>
+                            <div class="icon-desc modalFooterTxt">60-Days free returns</div>
+                        </div>
+
+                        <div>
+                            <div class="alignC"><img class="img-size" src="assets/images/product/Artwork24_ea70e5c6-96b9-498a-bc2d-c807e7712a37.png" alt="" /> </div>
+                            <div class="icon-desc modalFooterTxt" style="margin-top: 30px">24/27 Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!--  Footer  -->
     <footer class="cardFooterBg">
@@ -1056,21 +1120,36 @@
     let starArray = [0, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0, 5, 0, 0, 5, 2, 3, 4, 5, 6, 7, 8];
     let id_star;
 
-
     for(let k = 1; k <= starArray.length; k ++) {
         id_star = 'starReview' + k.toString();
         if ($('#' + id_star).length !== 0) {
             document.getElementById(id_star).innerHTML = '';
-
             for (let yStar = 1; yStar <= starArray[k - 1]; yStar ++) {
                 document.getElementById(id_star).innerHTML += '<span><img class="starSize" src="assets/images/home/lastView-yellow.png" alt="" /></span>';
             }
-
             for (let gStar = 5; gStar > starArray[k - 1]; gStar --) {
                 document.getElementById(id_star).innerHTML += '<span><img class="starSize" src="assets/images/home/lastView-gray.png" alt="" /></span>';
             }
         }
     }
+
+    /**
+     *
+     */
+    let modal = document.getElementById("addBag");
+    let btn = document.getElementById("iPhoneCaseCover");
+    let span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    };
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
 
     /**
      * Heart Hover Replacing
@@ -1152,14 +1231,24 @@
      * Add to Bag
      */
     $('.redBtnAdd').mouseenter(function () {
-        $(this).find('img').attr('src', 'assets/images/product/Artwork12_10811b0e-8e09-4399-bb8d-0bf94ddd9bdf.png');
+        $(this).find('img').attr('src', 'assets/images/product/key-red.png');
     });
 
     $('.redBtnAdd').mouseleave(function () {
-        $(this).find('img').attr('src', 'assets/images/product/add-card.png');
+        $(this).find('img').attr('src', 'assets/images/product/key-white.png');
 
     });
 
+    /**
+     * View Bag button Key replacing
+     */
+    $('.viewBag-btn').mouseenter(function () {
+        $(this).find('img').attr('src', 'assets/images/product/key-white.png');
+    });
+
+    $('.viewBag-btn').mouseleave(function () {
+        $(this).find('img').attr('src', 'assets/images/product/key-red.png');
+    });
 </script>
 
 </html>
