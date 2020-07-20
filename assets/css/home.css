@@ -836,6 +836,7 @@ html {
 }
 
 body {
+    overflow-x: hidden !important;
     margin: 0 auto;
     color: #4E4E4E;
     background-color: #ffffff;
@@ -968,6 +969,7 @@ body {
 .header-btn {
     color: #4E4E4E;
 }
+
 .header-btn:hover {
     text-decoration: none;
     color: #ED365C !important;
@@ -1643,7 +1645,8 @@ hr {
 }
 
 
-.txt-font-color6 {
+.txt-font-color6,
+.txt-gray {
     color: #4D555B;
 }
 
@@ -2238,6 +2241,10 @@ div .owl-prev:hover {
         padding-top: 40px !important;
     }
 
+    .days-phoneShown {
+        padding-top: 20px !important;
+    }
+
 }
 
 @media screen and ( max-width: 480px ){
@@ -2607,9 +2614,39 @@ div .owl-prev:hover {
     cursor: pointer;
 }
 
-select {
-    color: red;
-}
+/*.navbar-nav {*/
+/*    flex-direction: row !important;*/
+/*}*/
+
+/*.bootstrap-select>.dropdown-toggle  {*/
+/*    padding-left: 20px;*/
+/*    border: solid 2px #ED365C;*/
+/*    border-radius: 30px;*/
+/*    width: 300px !important;*/
+/*    height: 45px;*/
+/*    font-size: 1.3rem;*/
+/*    font-weight: 400;*/
+/*    color: #ED365C;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.dropdown-menu .show {*/
+/*    margin-top: 0 !important;*/
+/*    font-size: 1.2rem;*/
+/*    color: #000000;*/
+/*}*/
+
+/*.dropdown-menu {*/
+/*    border-radius: 15px !important;*/
+/*}*/
+
+/*.dropdown-menu .show > li:hover {*/
+/*    color: #ED365C;*/
+/*}*/
+
+/*.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {*/
+/*    width: 300px !important;*/
+/*}*/
 
 .days-shipping,
 .days-phoneShown {
@@ -2957,7 +2994,6 @@ input:checked + .slide:before {
 
 .smallCard {
     margin: 20px 20px 32px;
-
 
     border-radius: 15px;
     text-align: center;
@@ -3396,26 +3432,6 @@ input:checked + .slide:before {
 .star-productDesc {
     padding: 10px 10px 10px 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .modal {

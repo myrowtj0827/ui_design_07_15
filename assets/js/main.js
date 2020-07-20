@@ -13,7 +13,7 @@ $(document).ready(function() {
         "                    <div class=\"hover-circle-left justify-middle-contents tipsPrev\">\n" +
         "                        <img class=\"arrow-size Alabama\" src=\"assets/images/home/arrow-left-black.png\" alt=\"\" />\n" +
         "                </div></span>","<span class='display-arrow-right carousel-nav-right'>\n" +
-        "                    <div class=\"w3-right hover-circle-right justify-middle-contents tipsNext\">\n" +
+        "                    <div class=\"hover-circle-right justify-middle-contents tipsNext\">\n" +
         "                        <img class=\"arrow-size Atlanta\" src=\"assets/images/home/arrow-right-black.png\" alt=\"\" />\n" +
         "                </div></span>"],
         dots:true,
@@ -85,7 +85,7 @@ $(document).ready(function() {
         "                    <div class=\"hover-circle-left justify-middle-contents tipsPrev\">\n" +
         "                        <img class=\"arrow-size Alabama\" src=\"assets/images/home/arrow-left-black.png\" alt=\"\" />\n" +
         "                </div></span>","<span class='display-arrow-right carousel-nav-right'>\n" +
-        "                    <div class=\"w3-right hover-circle-right justify-middle-contents tipsNext\">\n" +
+        "                    <div class=\"hover-circle-right justify-middle-contents tipsNext\">\n" +
         "                        <img class=\"arrow-size Atlanta\" src=\"assets/images/home/arrow-right-black.png\" alt=\"\" />\n" +
         "                </div></span>"],
         autoplay:true,
@@ -147,7 +147,7 @@ $(document).ready(function() {
         "                    <div class=\"hover-circle-left justify-middle-contents tipsPrev\">\n" +
         "                        <img class=\"arrow-size Alabama\" src=\"assets/images/home/arrow-left-black.png\" alt=\"\" />\n" +
         "                </div></span>","<span class='display-arrow-right carousel-nav-right'>\n" +
-        "                    <div class=\"w3-right hover-circle-right justify-middle-contents tipsNext\">\n" +
+        "                    <div class=\"hover-circle-right justify-middle-contents tipsNext\">\n" +
         "                        <img class=\"arrow-size Atlanta\" src=\"assets/images/home/arrow-right-black.png\" alt=\"\" />\n" +
         "                </div></span>"],
          autoplay:true,
@@ -230,7 +230,7 @@ function creatingProducts() {
     for(let k = firstP; k < firstP + nCount; k ++) {
         id_star = 'starReview' + k.toString();
 
-        if (k % 2 === 1) {
+        if (k % 6< 3) {
             document.getElementById('productList').innerHTML += '<div class="air-card-bg-slider air-cardB">\n' +
                 '                            <div class="rL-float">\n' +
                 '                                <div class="icon-size1 percentY">\n' +
@@ -336,7 +336,7 @@ $(document).ready(function() {
         "                    <div class=\"hover-circle-left justify-middle-contents tipsPrev\">\n" +
         "                        <img class=\"arrow-size Alabama\" src=\"assets/images/home/arrow-left-black.png\" alt=\"\" />\n" +
         "                </div></span>","<span class='display-arrow-right carousel-nav-right'>\n" +
-        "                    <div class=\"w3-right hover-circle-right justify-middle-contents tipsNext\">\n" +
+        "                    <div class=\"hover-circle-right justify-middle-contents tipsNext\">\n" +
         "                        <img class=\"arrow-size Atlanta\" src=\"assets/images/home/arrow-right-black.png\" alt=\"\" />\n" +
         "                </div></span>"],
         autoplay:true,
@@ -393,7 +393,7 @@ $(document).ready(function() {
         "                    <div class=\"hover-circle-left justify-middle-contents tipsPrev\">\n" +
         "                        <img class=\"arrow-size Alabama\" src=\"assets/images/home/arrow-left-black.png\" alt=\"\" />\n" +
         "                </div></span>","<span class='display-arrow-right carousel-nav-right'>\n" +
-        "                    <div class=\"w3-right hover-circle-right justify-middle-contents tipsNext\">\n" +
+        "                    <div class=\"hover-circle-right justify-middle-contents tipsNext\">\n" +
         "                        <img class=\"arrow-size Atlanta\" src=\"assets/images/home/arrow-right-black.png\" alt=\"\" />\n" +
         "                </div></span>"],
         autoplay:true,
