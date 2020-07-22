@@ -4,9 +4,6 @@
     <list default="true" id="4bf0d388-52d1-4175-972b-b0584238771c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airPods.html" beforeDir="false" afterPath="$PROJECT_DIR$/airPods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/products.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,8 @@
       <workItem from="1595178363884" duration="396000" />
       <workItem from="1595179728053" duration="633000" />
       <workItem from="1595204316786" duration="3302000" />
-      <workItem from="1595248173588" duration="9053000" />
+      <workItem from="1595248173588" duration="9652000" />
+      <workItem from="1595298407630" duration="9562000" />
     </task>
     <servers />
   </component>
@@ -88,5 +86,9 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2764" y="245" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1595039016510" />
+    <state x="2592" y="230" key="search.everywhere.popup" timestamp="1595379426911">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2592" y="230" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1595379426911" />
   </component>
 </project>
